@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailImageVC" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="ha3-xJ-cjS" id="GOX-jl-kgW"/>
+                <outlet property="contentView" destination="MkL-iR-dJR" id="0gw-mq-ImC"/>
+                <outlet property="imageDetail" destination="geE-Ok-tAN" id="flX-Nn-VqG"/>
+                <outlet property="scrollView" destination="pch-QR-emq" id="Vxt-SX-TLZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3SE-N1-1vr">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pch-QR-emq">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MkL-iR-dJR">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="783.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="geE-Ok-tAN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="783.5"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="geE-Ok-tAN" firstAttribute="leading" secondItem="MkL-iR-dJR" secondAttribute="leading" id="4il-HT-qwo"/>
+                                <constraint firstAttribute="bottom" secondItem="geE-Ok-tAN" secondAttribute="bottom" id="ihf-YG-5eA"/>
+                                <constraint firstAttribute="trailing" secondItem="geE-Ok-tAN" secondAttribute="trailing" id="mZl-zD-zTq"/>
+                                <constraint firstItem="geE-Ok-tAN" firstAttribute="top" secondItem="MkL-iR-dJR" secondAttribute="top" id="qq9-4T-EqI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="MkL-iR-dJR" firstAttribute="top" secondItem="pch-QR-emq" secondAttribute="top" id="4xR-ax-jKI"/>
+                        <constraint firstAttribute="trailing" secondItem="MkL-iR-dJR" secondAttribute="trailing" id="U0B-1r-gOu"/>
+                        <constraint firstAttribute="bottom" secondItem="MkL-iR-dJR" secondAttribute="bottom" id="csM-bj-W9Y"/>
+                        <constraint firstItem="MkL-iR-dJR" firstAttribute="height" secondItem="pch-QR-emq" secondAttribute="height" multiplier="0.957627" id="fo5-Xl-PmA"/>
+                        <constraint firstItem="MkL-iR-dJR" firstAttribute="leading" secondItem="pch-QR-emq" secondAttribute="leading" id="qlj-39-ujq"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha3-xJ-cjS">
+                    <rect key="frame" x="374" y="44" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="P8N-Fb-DGn"/>
+                        <constraint firstAttribute="width" constant="40" id="fgP-Sn-Xe7"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <buttonConfiguration key="configuration" style="plain" image="ItemClose"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="46S-9o-bPO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pch-QR-emq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="16U-Rb-HR5"/>
+                <constraint firstItem="MkL-iR-dJR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="L23-Ck-nbj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pch-QR-emq" secondAttribute="bottom" id="UGx-dn-seF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pch-QR-emq" secondAttribute="trailing" id="c7k-ap-zNc"/>
+                <constraint firstItem="3SE-N1-1vr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cuv-kr-6lv"/>
+                <constraint firstItem="ha3-xJ-cjS" firstAttribute="top" secondItem="pch-QR-emq" secondAttribute="top" id="hSc-e5-97O"/>
+                <constraint firstItem="pch-QR-emq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hcW-qd-EIC"/>
+                <constraint firstAttribute="bottom" secondItem="3SE-N1-1vr" secondAttribute="bottom" id="hrS-JH-A7F"/>
+                <constraint firstItem="3SE-N1-1vr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="inG-T5-cTy"/>
+                <constraint firstItem="ha3-xJ-cjS" firstAttribute="trailing" secondItem="pch-QR-emq" secondAttribute="trailing" id="mzD-4f-lHU"/>
+                <constraint firstAttribute="trailing" secondItem="3SE-N1-1vr" secondAttribute="trailing" id="wRu-JQ-aWK"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="68"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ItemClose" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneBookViewController" customModule="mSM" customModuleProvider="target">
+            <connections>
+                <outlet property="contactListView" destination="pFk-ZW-p2R" id="jHG-Ia-vKD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjs-di-Sw4">
+                    <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" indicatorStyle="black" delaysContentTouches="NO" keyboardDismissMode="onDrag" style="plain" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pFk-ZW-p2R">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="pFk-ZW-p2R" firstAttribute="leading" secondItem="mjs-di-Sw4" secondAttribute="leading" id="0oA-78-T0U"/>
+                        <constraint firstItem="pFk-ZW-p2R" firstAttribute="top" secondItem="mjs-di-Sw4" secondAttribute="top" id="OlD-M0-mXc"/>
+                        <constraint firstAttribute="trailing" secondItem="pFk-ZW-p2R" secondAttribute="trailing" id="Zxh-Ij-3Q6"/>
+                        <constraint firstAttribute="bottom" secondItem="pFk-ZW-p2R" secondAttribute="bottom" id="fbK-np-S0F"/>
+                        <constraint firstItem="pFk-ZW-p2R" firstAttribute="top" secondItem="mjs-di-Sw4" secondAttribute="top" id="xUG-Qe-Lz8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mjs-di-Sw4" secondAttribute="bottom" id="Jak-kH-BLd"/>
+                <constraint firstItem="mjs-di-Sw4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="R3m-Bo-Ug7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mjs-di-Sw4" secondAttribute="trailing" id="dAv-8e-6VA"/>
+                <constraint firstItem="mjs-di-Sw4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mUz-oY-Sok"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-114" y="-38"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderDetailShinhan" customModule="FPTShop_Beta" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderDetailShinhan" customModule="FPTShop_Beta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnv-Cf-1P0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG TIN KHÁCH HÀNG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qez-Bf-KsG">
+                    <rect key="frame" x="5" y="5" width="404" height="55"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.082352941176470587" green="0.72156862745098038" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qez-Bf-KsG" secondAttribute="bottom" constant="5" id="2k8-e1-se8"/>
+                <constraint firstAttribute="trailing" secondItem="dnv-Cf-1P0" secondAttribute="trailing" id="97p-oT-abk"/>
+                <constraint firstItem="dnv-Cf-1P0" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="JEZ-Q7-J9b"/>
+                <constraint firstAttribute="trailing" secondItem="Qez-Bf-KsG" secondAttribute="trailing" constant="5" id="TX6-Vb-2As"/>
+                <constraint firstItem="Qez-Bf-KsG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Zfu-GO-miP"/>
+                <constraint firstItem="Qez-Bf-KsG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="jDe-s4-SAM"/>
+                <constraint firstItem="dnv-Cf-1P0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lUE-Ak-j93"/>
+                <constraint firstAttribute="top" secondItem="dnv-Cf-1P0" secondAttribute="top" id="zZ5-cK-H0Y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblTItle" destination="Qez-Bf-KsG" id="Z1S-XG-7cG"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-210.60267857142856"/>
+        </view>
+    </objects>
+</document>

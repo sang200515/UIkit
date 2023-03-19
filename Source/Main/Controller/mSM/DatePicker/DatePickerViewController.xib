@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerViewController" customModule="mSM" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="9k3-HZ-MBj" id="nqf-dd-XZx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9k3-HZ-MBj">
+                    <rect key="frame" x="0.0" y="186" width="320" height="196"/>
+                    <date key="date" timeIntervalSinceReferenceDate="557918551.85870004">
+                        <!--2018-09-06 09:22:31 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="vi"/>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Laz-bV-N6G">
+                    <rect key="frame" x="16" y="402" width="288" height="40"/>
+                    <color key="backgroundColor" red="0.2784313725" green="0.69019607839999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Laz-bV-N6G" secondAttribute="height" multiplier="36:5" id="apr-8Y-oeK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Đồng ý">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="AcceptButtonSelected" destination="-1" eventType="touchUpInside" id="xUL-x8-FMk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn vui lòng chọn ngày muốn xem báo cáo:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gji-jq-g3z">
+                    <rect key="frame" x="16" y="118" width="288" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Laz-bV-N6G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6zg-MT-lXD"/>
+                <constraint firstItem="9k3-HZ-MBj" firstAttribute="top" secondItem="Gji-jq-g3z" secondAttribute="bottom" constant="20" id="EHx-ce-5cI"/>
+                <constraint firstItem="9k3-HZ-MBj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EoT-0i-28T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gji-jq-g3z" secondAttribute="trailing" constant="16" id="Osz-wH-9mD"/>
+                <constraint firstItem="Gji-jq-g3z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ROb-OD-acT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Laz-bV-N6G" secondAttribute="trailing" constant="16" id="WuL-Lo-ktP"/>
+                <constraint firstItem="Laz-bV-N6G" firstAttribute="top" secondItem="9k3-HZ-MBj" secondAttribute="bottom" constant="20" id="ctJ-lF-oxD"/>
+                <constraint firstItem="9k3-HZ-MBj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hgp-El-TCi"/>
+                <constraint firstItem="Laz-bV-N6G" firstAttribute="centerX" secondItem="9k3-HZ-MBj" secondAttribute="centerX" id="ihd-vS-1AH"/>
+                <constraint firstItem="Laz-bV-N6G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jIb-4f-3XN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Laz-bV-N6G" secondAttribute="bottom" constant="126" id="v8L-R9-oXA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

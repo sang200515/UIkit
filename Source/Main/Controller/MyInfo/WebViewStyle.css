@@ -1,0 +1,36 @@
+@font-face {
+    font-family: sf_pro;
+    src: url("sf_pro_display_regular.otf")
+}
+
+p {
+    font-family: -apple-system, Helvetica; sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: "#393939";
+    line-height: 22px;
+    font-style: normal;
+}
+
+body {
+    font-family: sf_pro  !important;
+    color: #393939  !important;
+    font-size: 16px  !important;
+}
+span {
+   font-size: 16px !important;
+   font-family: sf_pro  !important;
+   color: #393939 !important;
+}
+
+
+.gfg {
+    width:auto;
+    text-align:center;
+    padding: 15px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}

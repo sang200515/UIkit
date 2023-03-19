@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="BaoKimPointCell" customModule="FPTShop_Beta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected_radio_ic" translatesAutoresizingMaskIntoConstraints="NO" id="dV1-xZ-LPC">
+                        <rect key="frame" x="20" y="12.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="NhH-mv-SEB"/>
+                            <constraint firstAttribute="width" secondItem="dV1-xZ-LPC" secondAttribute="height" multiplier="1:1" id="sgg-bH-as4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OD-2y-Hhm">
+                        <rect key="frame" x="45" y="10" width="45" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="68c-Vc-GB9"/>
+                            <constraint firstAttribute="height" constant="20" id="SxL-uC-juZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBl-5u-cKc">
+                        <rect key="frame" x="90" y="10" width="10" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3p7-We-LvY"/>
+                            <constraint firstAttribute="width" constant="10" id="NOF-lH-QsC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Văn phòng HCM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nE-w6-V6D">
+                        <rect key="frame" x="105" y="10" width="264" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="HFR-ec-au8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xe 30 ghế VIP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtQ-J5-fiM">
+                        <rect key="frame" x="105" y="40" width="264" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="etc-wY-2v7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1OD-2y-Hhm" firstAttribute="leading" secondItem="dV1-xZ-LPC" secondAttribute="trailing" constant="10" id="1ag-bR-85a"/>
+                    <constraint firstItem="dV1-xZ-LPC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3We-5z-ld9"/>
+                    <constraint firstItem="dBl-5u-cKc" firstAttribute="leading" secondItem="1OD-2y-Hhm" secondAttribute="trailing" id="61I-kd-M1s"/>
+                    <constraint firstItem="YtQ-J5-fiM" firstAttribute="trailing" secondItem="6nE-w6-V6D" secondAttribute="trailing" id="8Pd-RL-0tY"/>
+                    <constraint firstItem="YtQ-J5-fiM" firstAttribute="leading" secondItem="6nE-w6-V6D" secondAttribute="leading" id="91G-QR-l6k"/>
+                    <constraint firstItem="6nE-w6-V6D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EBi-uE-jkT"/>
+                    <constraint firstItem="6nE-w6-V6D" firstAttribute="leading" secondItem="dBl-5u-cKc" secondAttribute="trailing" constant="5" id="HsF-Hu-Puz"/>
+                    <constraint firstAttribute="bottom" secondItem="YtQ-J5-fiM" secondAttribute="bottom" constant="10" id="JZv-Yd-r2j"/>
+                    <constraint firstItem="6nE-w6-V6D" firstAttribute="centerY" secondItem="dV1-xZ-LPC" secondAttribute="centerY" id="SG1-MR-LYT"/>
+                    <constraint firstItem="1OD-2y-Hhm" firstAttribute="centerY" secondItem="dV1-xZ-LPC" secondAttribute="centerY" id="ahv-cj-LJ2"/>
+                    <constraint firstItem="YtQ-J5-fiM" firstAttribute="top" secondItem="6nE-w6-V6D" secondAttribute="bottom" constant="10" id="hsK-Lq-GVW"/>
+                    <constraint firstItem="dBl-5u-cKc" firstAttribute="centerY" secondItem="1OD-2y-Hhm" secondAttribute="centerY" id="n4y-0o-Uvc"/>
+                    <constraint firstAttribute="trailing" secondItem="6nE-w6-V6D" secondAttribute="trailing" constant="20" id="s1i-kf-PBS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgSelection" destination="dV1-xZ-LPC" id="VD2-PM-Sb5"/>
+                <outlet property="lbLocation" destination="YtQ-J5-fiM" id="Tf7-0U-wv2"/>
+                <outlet property="lbName" destination="6nE-w6-V6D" id="aj4-Tg-Kg1"/>
+                <outlet property="lbTime" destination="1OD-2y-Hhm" id="U8V-5L-gmr"/>
+            </connections>
+            <point key="canvasLocation" x="181.8840579710145" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selected_radio_ic" width="170.5" height="170.5"/>
+    </resources>
+</document>

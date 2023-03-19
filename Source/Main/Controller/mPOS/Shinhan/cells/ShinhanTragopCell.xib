@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="157" id="KGk-i7-Jjw" customClass="ShinhanTragopCell" customModule="FPTShop_Beta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="245"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bdm-9k-ESy">
+                        <rect key="frame" x="5" y="5" width="336" height="235"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xH1-WQ-7mF" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0bK-s1-bHs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Gói trả góp"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xu-gM-H5U" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="70" width="336" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FqG-2s-gnj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Kỳ hạn"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lãi suất: 500%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KX6-c4-Bs9">
+                                <rect key="frame" x="0.0" y="140" width="336" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7JT-FS-bTE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfe-5q-YiG" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="175" width="336" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wDW-fR-pUM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Số tiền trả trước"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMoneyTxt" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bdm-9k-ESy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="hNt-Iq-1Eg"/>
+                    <constraint firstItem="bdm-9k-ESy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="iVM-eg-Jql"/>
+                    <constraint firstAttribute="bottom" secondItem="bdm-9k-ESy" secondAttribute="bottom" constant="5" id="rAa-9a-fTe"/>
+                    <constraint firstAttribute="trailing" secondItem="bdm-9k-ESy" secondAttribute="trailing" constant="5" id="sSi-3e-CCt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="goitragop" destination="xH1-WQ-7mF" id="sjy-YO-njg"/>
+                <outlet property="kyhan" destination="7xu-gM-H5U" id="Ou7-ja-TCZ"/>
+                <outlet property="laisuatLbl" destination="KX6-c4-Bs9" id="D45-AM-TgB"/>
+                <outlet property="tientratruoc" destination="kfe-5q-YiG" id="DI2-B3-rRE"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="104.79910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down_arrow_ic" width="105.5" height="170.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenericCallLogScreenVC" customModule="fptshop" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSendRequest" destination="pUf-Oc-2nL" id="nxJ-WK-eg9"/>
+                <outlet property="contentView" destination="n8k-sv-z2g" id="tfd-WD-nvd"/>
+                <outlet property="lblCommentTitle" destination="sOc-zF-Pwz" id="cpm-ri-QxQ"/>
+                <outlet property="lblNewestComment" destination="BBV-Wf-jAz" id="4ec-aF-zGf"/>
+                <outlet property="lblRequestDescription" destination="dBU-Vt-JfF" id="YGa-oT-hEl"/>
+                <outlet property="scrollView" destination="TLY-bj-P3b" id="yJo-LI-e7i"/>
+                <outlet property="tbxComment" destination="XwX-Ir-uiE" id="OF5-TK-yhd"/>
+                <outlet property="tbxReceiver" destination="eBS-9A-EMM" id="P02-6f-KvQ"/>
+                <outlet property="tbxRequestDate" destination="Wyt-fM-Fta" id="ELi-I5-Bgm"/>
+                <outlet property="tbxRequestId" destination="xn6-SH-9lg" id="Juf-RC-zkh"/>
+                <outlet property="tbxRequestTitle" destination="2HL-rL-Ove" id="7p0-jB-ELe"/>
+                <outlet property="tbxSender" destination="S8V-rF-ISg" id="JhR-Jw-UPN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="486"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="TLY-bj-P3b">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="486"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8k-sv-z2g">
+                            <rect key="frame" x="0.0" y="8" width="375" height="478"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KBY-9u-bZE">
+                                    <rect key="frame" x="16" y="0.0" width="343" height="16"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="146498" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xn6-SH-9lg">
+                                            <rect key="frame" x="0.0" y="0.0" width="47.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.85098039219999999" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27/09/2018 - 13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyt-fM-Fta">
+                                            <rect key="frame" x="233.5" y="0.0" width="109.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LZo-MD-RKp">
+                                    <rect key="frame" x="16" y="33" width="343" height="37"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8V-rF-ISg">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="16"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Từ: ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="DatNT-BA-10770-Shop Online">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="13" name=".AppleSystemUIFontEmphasized"/>
+                                                        <font key="NSOriginalFont" size="13" name=".AppleSystemUIFontEmphasized"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBS-9A-EMM">
+                                            <rect key="frame" x="0.0" y="21" width="343" height="16"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Đến: ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="4221-Nguyễn Hoàng ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="13" name=".AppleSystemUIFontEmphasized"/>
+                                                        <font key="NSOriginalFont" size="13" name=".AppleSystemUIFontEmphasized"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="N">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="13" name=".AppleSystemUIFontEmphasized"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="am">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="13" name=".AppleSystemUIFontEmphasized"/>
+                                                        <font key="NSOriginalFont" size="13" name=".AppleSystemUIFontEmphasized"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udf-uR-rHr">
+                                    <rect key="frame" x="8" y="78" width="359" height="1"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="c8E-3n-il2"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HL-rL-Ove">
+                                    <rect key="frame" x="16" y="88" width="343" height="31.5"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Duyệt lỗi thẩm mỹ - Phê duyệt - Hồ Chí Minh - 30808 - HCM Tô Hiến Thành">
+                                            <attributes>
+                                                <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="13" name=".AppleSystemUIFontEmphasized"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBU-Vt-JfF">
+                                    <rect key="frame" x="16" y="128" width="343" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Nhập nội dung trao đổi" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XwX-Ir-uiE">
+                                    <rect key="frame" x="16" y="218" width="343" height="173"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="173" id="1x4-gI-FFY"/>
+                                    </constraints>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-zF-Pwz">
+                                    <rect key="frame" x="16" y="164" width="343" height="16"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Nội dung trao đổi">
+                                            <attributes>
+                                                <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="13" name=".AppleSystemUIFontEmphasized"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trao đổi mới nhất" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBV-Wf-jAz">
+                                    <rect key="frame" x="16" y="190" width="343" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUf-Oc-2nL">
+                                    <rect key="frame" x="20" y="407" width="335" height="40"/>
+                                    <color key="backgroundColor" red="1" green="0.43921568630000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Gzh-bY-DPE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="Gửi phản hồi">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="21"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="SendRequest:" destination="-1" eventType="touchUpInside" id="w39-WK-wts"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="BBV-Wf-jAz" secondAttribute="trailing" constant="16" id="1vG-P5-The"/>
+                                <constraint firstItem="XwX-Ir-uiE" firstAttribute="leading" secondItem="n8k-sv-z2g" secondAttribute="leading" constant="16" id="4lY-Sg-NaF"/>
+                                <constraint firstAttribute="trailing" secondItem="dBU-Vt-JfF" secondAttribute="trailing" constant="16" id="7Gl-YM-DrM"/>
+                                <constraint firstItem="KBY-9u-bZE" firstAttribute="top" secondItem="n8k-sv-z2g" secondAttribute="top" id="E9x-Jc-jli"/>
+                                <constraint firstAttribute="trailing" secondItem="LZo-MD-RKp" secondAttribute="trailing" constant="16" id="EAU-ud-FRM"/>
+                                <constraint firstItem="2HL-rL-Ove" firstAttribute="top" secondItem="udf-uR-rHr" secondAttribute="bottom" constant="9" id="FRc-Gx-LWb"/>
+                                <constraint firstAttribute="trailing" secondItem="pUf-Oc-2nL" secondAttribute="trailing" constant="20" id="FYs-hl-ky3"/>
+                                <constraint firstItem="BBV-Wf-jAz" firstAttribute="leading" secondItem="n8k-sv-z2g" secondAttribute="leading" constant="16" id="Ivs-HE-ccO"/>
+                                <constraint firstItem="LZo-MD-RKp" firstAttribute="leading" secondItem="n8k-sv-z2g" secondAttribute="leading" constant="16" id="JYv-yT-Mhn"/>
+                                <constraint firstItem="dBU-Vt-JfF" firstAttribute="top" secondItem="2HL-rL-Ove" secondAttribute="bottom" constant="8.5" id="PO1-Xj-zFP"/>
+                                <constraint firstItem="sOc-zF-Pwz" firstAttribute="leading" secondItem="n8k-sv-z2g" secondAttribute="leading" constant="16" id="RAN-d8-rsz"/>
+                                <constraint firstItem="LZo-MD-RKp" firstAttribute="top" secondItem="KBY-9u-bZE" secondAttribute="bottom" constant="17" id="S8z-m4-JMT"/>
+                                <constraint firstItem="pUf-Oc-2nL" firstAttribute="leading" secondItem="n8k-sv-z2g" secondAttribute="leading" constant="20" id="URC-bx-wXe"/>
+                                <constraint firstItem="sOc-zF-Pwz" firstAttribute="top" secondItem="dBU-Vt-JfF" secondAttribute="bottom" constant="20" id="UqB-R8-6x8"/>
+                                <constraint firstItem="XwX-Ir-uiE" firstAttribute="top" secondItem="BBV-Wf-jAz" secondAttribute="bottom" constant="10" id="VLB-7Q-4CE"/>
+                                <constraint firstAttribute="trailing" secondItem="KBY-9u-bZE" secondAttribute="trailing" constant="16" id="Vdx-FF-rUY"/>
+                                <constraint firstItem="udf-uR-rHr" firstAttribute="leading" secondItem="n8k-sv-z2g" secondAttribute="leading" constant="8" id="VoM-PM-Ky9"/>
+                                <constraint firstItem="KBY-9u-bZE" firstAttribute="leading" secondItem="n8k-sv-z2g" secondAttribute="leading" constant="16" id="WZF-VJ-7fn"/>
+                                <constraint firstAttribute="trailing" secondItem="udf-uR-rHr" secondAttribute="trailing" constant="8" id="ZSY-ET-wef"/>
+                                <constraint firstAttribute="bottom" secondItem="pUf-Oc-2nL" secondAttribute="bottom" constant="31" id="aQw-mZ-uDu"/>
+                                <constraint firstAttribute="trailing" secondItem="sOc-zF-Pwz" secondAttribute="trailing" constant="16" id="acz-UN-fZy"/>
+                                <constraint firstItem="BBV-Wf-jAz" firstAttribute="top" secondItem="sOc-zF-Pwz" secondAttribute="bottom" constant="10" id="eHO-Ma-uCL"/>
+                                <constraint firstItem="pUf-Oc-2nL" firstAttribute="top" secondItem="XwX-Ir-uiE" secondAttribute="bottom" constant="16" id="fhj-wi-7Me"/>
+                                <constraint firstAttribute="trailing" secondItem="XwX-Ir-uiE" secondAttribute="trailing" constant="16" id="klA-9h-rXB"/>
+                                <constraint firstItem="udf-uR-rHr" firstAttribute="top" secondItem="LZo-MD-RKp" secondAttribute="bottom" constant="8" id="vQX-6S-3HV"/>
+                                <constraint firstItem="2HL-rL-Ove" firstAttribute="leading" secondItem="n8k-sv-z2g" secondAttribute="leading" constant="16" id="wP5-Ab-Jux"/>
+                                <constraint firstAttribute="trailing" secondItem="2HL-rL-Ove" secondAttribute="trailing" constant="16" id="ySi-bM-ivf"/>
+                                <constraint firstItem="dBU-Vt-JfF" firstAttribute="leading" secondItem="n8k-sv-z2g" secondAttribute="leading" constant="16" id="zhM-dZ-jKA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="n8k-sv-z2g" secondAttribute="bottom" id="8Qh-oy-Uyn"/>
+                        <constraint firstItem="n8k-sv-z2g" firstAttribute="leading" secondItem="TLY-bj-P3b" secondAttribute="leading" id="AJg-EK-T3i"/>
+                        <constraint firstAttribute="trailing" secondItem="n8k-sv-z2g" secondAttribute="trailing" id="YNs-UV-lIV"/>
+                        <constraint firstItem="n8k-sv-z2g" firstAttribute="top" secondItem="TLY-bj-P3b" secondAttribute="top" constant="8" id="dl3-82-CEv"/>
+                        <constraint firstItem="n8k-sv-z2g" firstAttribute="height" secondItem="TLY-bj-P3b" secondAttribute="height" priority="100" constant="-8" id="gQT-al-oEH"/>
+                        <constraint firstItem="n8k-sv-z2g" firstAttribute="width" secondItem="TLY-bj-P3b" secondAttribute="width" id="zme-fp-IkD"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TLY-bj-P3b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1hI-nM-GZV"/>
+                <constraint firstItem="TLY-bj-P3b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1hy-OT-M07"/>
+                <constraint firstItem="TLY-bj-P3b" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="U3P-vR-4fL"/>
+                <constraint firstItem="TLY-bj-P3b" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="nSI-Qc-kkh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="267.1875" y="-470.07042253521126"/>
+        </view>
+    </objects>
+</document>

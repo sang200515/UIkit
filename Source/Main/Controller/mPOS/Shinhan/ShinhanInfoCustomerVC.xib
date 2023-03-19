@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShinhanInfoCustomerVC" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="birthView" destination="3x1-Ob-DXz" id="aMw-dP-8Lo"/>
+                <outlet property="bottomBUtton" destination="giU-d2-5a8" id="OhE-oj-3Gc"/>
+                <outlet property="cityTTView" destination="Xfw-qK-4fM" id="Ito-FJ-UfX"/>
+                <outlet property="cityTamtruView" destination="63i-ND-JH9" id="FWZ-B8-cS8"/>
+                <outlet property="cmndImmgView" destination="AaN-e5-aYW" id="5w8-rm-R2H"/>
+                <outlet property="cmndView" destination="vTK-jE-eq5" id="tQ2-Vi-aaS"/>
+                <outlet property="contenScrollView" destination="Omg-2D-Bvy" id="hBc-zw-q56"/>
+                <outlet property="contractImageView" destination="WNH-ey-yvx" id="LZ5-Wp-iSE"/>
+                <outlet property="contractTxtView" destination="xVf-5D-Krt" id="7rx-z8-dRw"/>
+                <outlet property="ctyView" destination="vbs-DG-dPK" id="iLC-O7-GSR"/>
+                <outlet property="femaleRadio" destination="bBZ-yN-SfH" id="0uV-XN-Uqx"/>
+                <outlet property="gplxImmgView" destination="kJf-mP-MSH" id="DO0-v9-Ia3"/>
+                <outlet property="gplxRadio" destination="ry3-ha-O7S" id="PeB-WM-SpM"/>
+                <outlet property="headerContacUser" destination="b5u-Bm-hQB" id="Y74-fe-TzF"/>
+                <outlet property="headerGPLX" destination="tXl-EM-bUa" id="35L-ax-VXK"/>
+                <outlet property="headerHinhanh" destination="r2g-yN-OBZ" id="Ppa-Br-Xai"/>
+                <outlet property="headerInfo" destination="1Kf-3I-hXT" id="nHr-NQ-rlQ"/>
+                <outlet property="headerJob" destination="0VB-vj-pvw" id="dCM-V4-W1i"/>
+                <outlet property="headerMaNoiBo" destination="kJF-Xt-cAL" id="6ke-3F-9eT"/>
+                <outlet property="headerTamtru" destination="nXo-ql-Ns3" id="DyS-CB-vOp"/>
+                <outlet property="headerThuongtru" destination="4Wu-RX-tGh" id="mZk-P2-FSM"/>
+                <outlet property="infoPhoneView" destination="SyK-UO-Xyc" id="Bgb-vI-eRv"/>
+                <outlet property="maNoiBoView" destination="vXR-Em-Glc" id="Pe2-Ds-COz"/>
+                <outlet property="mailView" destination="vCL-FC-yoD" id="Q9l-Q7-5kF"/>
+                <outlet property="maleRadio" destination="fdA-JL-saT" id="edw-so-25R"/>
+                <outlet property="nameView" destination="WCv-RM-BEu" id="vtY-5r-PEo"/>
+                <outlet property="ngaycapView" destination="Jgo-Wo-y2K" id="sFf-uq-RsB"/>
+                <outlet property="ngayhetHanView" destination="FJm-xB-ubr" id="qHs-Cu-u1z"/>
+                <outlet property="noiCapView" destination="yvs-cr-G0K" id="8MG-fx-ihy"/>
+                <outlet property="phoneContact1" destination="J4y-mw-sVB" id="qtI-yS-eo4"/>
+                <outlet property="phoneContact2" destination="M5R-79-x8R" id="jGT-LD-kDX"/>
+                <outlet property="phoneView" destination="OVX-pz-tLW" id="ZCZ-rd-VI1"/>
+                <outlet property="shkImgView1" destination="4wF-eO-Iku" id="neg-H0-5Z2"/>
+                <outlet property="shkImgView2" destination="TIl-YI-l0E" id="Pt9-cB-8nb"/>
+                <outlet property="shkRadio" destination="rbK-Mx-7dg" id="oYK-59-oBN"/>
+                <outlet property="shkStack" destination="KvC-me-oux" id="R0l-ro-Eic"/>
+                <outlet property="sonhaTTView" destination="c7T-5i-EBJ" id="UOA-F8-Z5e"/>
+                <outlet property="sonhaTamtruView" destination="mED-Ap-bnC" id="moN-2M-HdI"/>
+                <outlet property="stackGplxSHK" destination="HRh-0p-ll2" id="uZU-GO-L51"/>
+                <outlet property="stackHinhanh" destination="5OY-WK-OVT" id="fHU-p6-aR9"/>
+                <outlet property="stackInfo" destination="gSI-cL-X5h" id="fFR-nj-nYC"/>
+                <outlet property="stackInsideTamtru" destination="7GV-rx-pwe" id="Yni-94-T7e"/>
+                <outlet property="stackJob" destination="TTq-OV-Uly" id="xY3-2k-JUP"/>
+                <outlet property="stackTamtru" destination="CLw-BZ-uix" id="bq6-lz-zwd"/>
+                <outlet property="stackThuongtru" destination="AcK-ao-i6g" id="Mg7-Vv-mZH"/>
+                <outlet property="stackcontactUser" destination="TWQ-l2-A4Z" id="ISC-Ow-hev"/>
+                <outlet property="tamtruRadio" destination="4Ve-10-D3u" id="20T-K5-vx8"/>
+                <outlet property="tenDuongTTView" destination="G0H-7u-dSr" id="UXp-WY-Rfj"/>
+                <outlet property="tenduongTamtruView" destination="g6k-n8-qqe" id="FKN-sV-dpa"/>
+                <outlet property="thanhtoanView" destination="ba9-7T-Fq1" id="nMq-WF-M2r"/>
+                <outlet property="thunhapView" destination="SUP-Lg-HTq" id="3hh-tm-R3p"/>
+                <outlet property="townTTView" destination="gxF-km-22a" id="RxG-cp-1KD"/>
+                <outlet property="townTamtruView" destination="3rc-fF-UYC" id="8UY-1N-omP"/>
+                <outlet property="userImageView" destination="cHJ-bF-V1p" id="1Ll-F4-BeB"/>
+                <outlet property="userThamChieu1" destination="8QW-3p-6SM" id="Dt9-aO-Tof"/>
+                <outlet property="userThamChieu2" destination="yN3-yW-uL1" id="7hi-dy-1YG"/>
+                <outlet property="usermqhView1" destination="WtO-2F-fiK" id="BGH-D7-Okx"/>
+                <outlet property="usermqhView2" destination="bQM-QF-pcF" id="cYx-SK-J5N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xaTTView" destination="T0k-fg-mXu" id="24Z-HE-U6l"/>
+                <outlet property="xaTamtruView" destination="Nfu-F9-APa" id="7M1-ow-NHi"/>
+                <outletCollection property="lisStacks" destination="y6a-xJ-nZV" collectionClass="NSMutableArray" id="13M-jm-xZP"/>
+                <outletCollection property="lisStacks" destination="ex0-I6-GA8" collectionClass="NSMutableArray" id="0Rb-84-wcs"/>
+                <outletCollection property="lisStacks" destination="h5T-xc-G3F" collectionClass="NSMutableArray" id="dAi-dC-2Cv"/>
+                <outletCollection property="lisStacks" destination="sEq-6D-H51" collectionClass="NSMutableArray" id="6qG-Xy-sz7"/>
+                <outletCollection property="lisStacks" destination="kBC-Ua-USr" collectionClass="NSMutableArray" id="Wlh-66-jdg"/>
+                <outletCollection property="lisStacks" destination="Ycl-UV-V1I" collectionClass="NSMutableArray" id="HFg-cG-yG1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6Q-tr-rSb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJs-Ya-fsb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omg-2D-Bvy" userLabel="contentScrollView">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q6w-Wr-sEB">
+                                            <rect key="frame" x="5" y="0.0" width="404" height="150"/>
+                                            <subviews>
+                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y6a-xJ-nZV" userLabel="Stack View info">
+                                                    <rect key="frame" x="0.0" y="-655" width="404" height="655"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kf-3I-hXT" customClass="HeaderInfo" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="56q-F8-XO7"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="THÔNG TIN CÁ NHÂN"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                    <integer key="value" value="0"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gSI-cL-X5h">
+                                                            <rect key="frame" x="0.0" y="40" width="404" height="615"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fk5-O0-015">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="55"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới tính (*)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co2-DH-8fq">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="10"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WO1-mB-YHC">
+                                                                            <rect key="frame" x="0.0" y="15" width="404" height="40"/>
+                                                                            <subviews>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdA-JL-saT" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="197" height="40"/>
+                                                                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="unselected_radio_ic"/>
+                                                                                        <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="selected_radio_ic"/>
+                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="Nam"/>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                                            <integer key="value" value="0"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </view>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBZ-yN-SfH" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                                    <rect key="frame" x="207" y="0.0" width="197" height="40"/>
+                                                                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="unselected_radio_ic"/>
+                                                                                        <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="selected_radio_ic"/>
+                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="Nữ"/>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                                            <integer key="value" value="1"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </view>
+                                                                            </subviews>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="40" id="1bH-nt-kQa"/>
+                                                                            </constraints>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="55" id="7sI-SO-lRN"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCv-RM-BEu" userLabel="hoten" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="65" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="fVD-B9-abQ"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Họ tên KH (*)"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3x1-Ob-DXz" userLabel="namsinh" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="135" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="kFs-Gz-P7n"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Ngày tháng năm sinh (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="calendarIC"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isDate" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTK-jE-eq5" userLabel="cmnd" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="205" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="nkw-84-k3F"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="CMND/CCCD (*)"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgo-Wo-y2K" userLabel="ngaycap" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="275" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="9uh-r7-R4F"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Ngày cấp (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isDate" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="calendarIC"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJm-xB-ubr" userLabel="ngayhethan" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="345" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="d66-1n-9Qh"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Ngày hết hạn"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isDate" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="calendarIC"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvs-cr-G0K" userLabel="noicap" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="415" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="s6z-do-xGk"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Nơi cấp (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSearch" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVX-pz-tLW" userLabel="sdt" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="485" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="K7P-5I-1y4"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Số điện thoại (*)"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCL-FC-yoD" userLabel="email" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="555" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="pyZ-LZ-fiD"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Email"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ex0-I6-GA8" userLabel="Stack thuong tru">
+                                                    <rect key="frame" x="0.0" y="-380" width="404" height="380"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-RX-tGh" userLabel="Header thuongtru" customClass="HeaderInfo" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="dpl-wV-ehg"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="ĐỊA CHỈ THƯỜNG TRÚ"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                    <integer key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AcK-ao-i6g">
+                                                            <rect key="frame" x="0.0" y="40" width="404" height="340"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfw-qK-4fM" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="OUM-qv-onC"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Thành phố/Tỉnh (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSearch" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxF-km-22a" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="70" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="gKY-RV-5aj"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Quận/Huyện (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSearch" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0k-fg-mXu" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="140" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="v62-9s-fWp"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Phường/Xã (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSearch" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7T-5i-EBJ" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="210" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="w4G-hl-KCY"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Số nhà"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0H-7u-dSr" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="280" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="Aev-Wo-j0P"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Đường/Ấp (*)"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h5T-xc-G3F" userLabel="Stack tam tru">
+                                                    <rect key="frame" x="0.0" y="-420" width="404" height="420"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXo-ql-Ns3" userLabel="Header tamtru" customClass="HeaderInfo" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="38W-c9-92I"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="ĐỊA CHỈ TẠM TRÚ"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CLw-BZ-uix">
+                                                            <rect key="frame" x="0.0" y="40" width="404" height="380"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qN8-Dw-Yqq">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ve-10-D3u" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="check-2"/>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="check-1-1"/>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="Giống địa chỉ thường trú"/>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                                    <integer key="value" value="2"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="jzn-aw-hBc"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7GV-rx-pwe">
+                                                                    <rect key="frame" x="0.0" y="40" width="404" height="340"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63i-ND-JH9" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="60"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="60" id="0Xq-MH-NHZ"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Thành phố/Tỉnh (*)"/>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearch" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rc-fF-UYC" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="70" width="404" height="60"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="60" id="YgU-J9-JbD"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Quận/Huyện (*)"/>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearch" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfu-F9-APa" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="140" width="404" height="60"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="60" id="y28-SU-4vK"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Phường/Xã (*)"/>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearch" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mED-Ap-bnC" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="210" width="404" height="60"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="60" id="hGy-qc-iyO"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Số nhà"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6k-n8-qqe" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="280" width="404" height="60"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="60" id="hx9-dk-3rP"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Đường/Ấp (*)"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kBC-Ua-USr" userLabel="Stack info nguoi lien he">
+                                                    <rect key="frame" x="0.0" y="-450" width="404" height="450"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5u-Bm-hQB" userLabel="Header nguoi lien he" customClass="HeaderInfo" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="OFn-oJ-uvI"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="THÔNG TIN NGƯỜI LIÊN HỆ"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                    <integer key="value" value="4"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TWQ-l2-A4Z">
+                                                            <rect key="frame" x="0.0" y="40" width="404" height="410"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QW-3p-6SM" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="hZk-et-bkY"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Họ và tên người tham chiếu 1 (*)"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WtO-2F-fiK" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="70" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="HIR-Sf-IOf"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Mối quan hệ (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSearch" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-mw-sVB" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="140" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="1Bx-fy-7lj"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Số điện thoại (*)"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-yW-uL1" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="210" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="O5Z-I7-Mok"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Họ và tên người tham chiếu 2 (*)"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQM-QF-pcF" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="280" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="iRD-Vs-xED"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Mối quan hệ (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSearch" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5R-79-x8R" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="350" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="MO4-Xj-oQN"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Số điện thoại (*)"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sEq-6D-H51" userLabel="Stack job info">
+                                                    <rect key="frame" x="0.0" y="-240" width="404" height="240"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0VB-vj-pvw" userLabel="Header job info" customClass="HeaderInfo" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="PLE-iS-ot8"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="THÔNG TIN CÔNG VIỆC"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                    <integer key="value" value="3"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TTq-OV-Uly">
+                                                            <rect key="frame" x="0.0" y="40" width="404" height="200"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbs-DG-dPK" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="soZ-Td-Z2A"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Tên công ty (*)"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUP-Lg-HTq" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="70" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="mmF-7H-yG1"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Thu nhập (VNĐ) (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isMoneyTxt" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-7T-Fq1" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="140" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="xgb-8t-FWU"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Ngày thanh toán đầu tiên (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButton" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HX3-qN-L1Q" userLabel="Stack Ma noi bo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="100"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJF-Xt-cAL" userLabel="Header ma noi bo" customClass="HeaderInfo" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="cyG-BW-v5J"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="MÃ NỘI BỘ"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LU5-m5-wEy">
+                                                            <rect key="frame" x="0.0" y="40" width="404" height="60"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXR-Em-Glc" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="60"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="V18-H7-JBc"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="chọn mã nội bộ (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButton" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ycl-UV-V1I" userLabel="Stack hinhanh dinh kem">
+                                                    <rect key="frame" x="0.0" y="105" width="404" height="905"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2g-yN-OBZ" userLabel="Header hinhanh" customClass="HeaderInfo" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="B6d-6K-6Dn"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="HÌNH ẢNH ĐÍNH KÈM"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5OY-WK-OVT">
+                                                            <rect key="frame" x="0.0" y="40" width="404" height="865"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AaN-e5-aYW" userLabel="Image cmnd view" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="170"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="170" id="Nyk-2H-Pt1"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="CMND/CCCD (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="Mặt trước"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="desRight" value="Mặt sau"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="add-image-256"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="NO"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="allowOpenCamera" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wYI-CC-7R5" userLabel="Stack gplx/shk">
+                                                                    <rect key="frame" x="0.0" y="180" width="404" height="245"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXl-EM-bUa" userLabel="Header gplx" customClass="HeaderInfo" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="30" id="lHw-i4-6a2"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="GIẤY PHÉP LÁI XE/ SỔ HỘ KHẨU"/>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                                    <integer key="value" value="6"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HRh-0p-ll2" userLabel="Stack gplx">
+                                                                            <rect key="frame" x="0.0" y="40" width="404" height="205"/>
+                                                                            <subviews>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ocu-iX-82y">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="55"/>
+                                                                                    <subviews>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loại giấy tờ (*)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xib-Up-6HP">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="10"/>
+                                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                        </label>
+                                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bvX-EM-p4m">
+                                                                                            <rect key="frame" x="0.0" y="15" width="404" height="40"/>
+                                                                                            <subviews>
+                                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ry3-ha-O7S" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="197" height="40"/>
+                                                                                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                                                                    <userDefinedRuntimeAttributes>
+                                                                                                        <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="unselected_radio_ic"/>
+                                                                                                        <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="selected_radio_ic"/>
+                                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="Giấy phép lái xe"/>
+                                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                                                            <integer key="value" value="3"/>
+                                                                                                        </userDefinedRuntimeAttribute>
+                                                                                                    </userDefinedRuntimeAttributes>
+                                                                                                </view>
+                                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbK-Mx-7dg" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                                                    <rect key="frame" x="207" y="0.0" width="197" height="40"/>
+                                                                                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                                                                    <userDefinedRuntimeAttributes>
+                                                                                                        <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="unselected_radio_ic"/>
+                                                                                                        <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="selected_radio_ic"/>
+                                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="Sổ hộ khẩu"/>
+                                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                                                            <integer key="value" value="4"/>
+                                                                                                        </userDefinedRuntimeAttribute>
+                                                                                                    </userDefinedRuntimeAttributes>
+                                                                                                </view>
+                                                                                            </subviews>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="40" id="59q-Sj-opW"/>
+                                                                                            </constraints>
+                                                                                        </stackView>
+                                                                                    </subviews>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="55" id="To1-rI-SeT"/>
+                                                                                    </constraints>
+                                                                                </stackView>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJf-mP-MSH" userLabel="Image gplx view" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="55" width="404" height="150"/>
+                                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="150" id="rsZ-VL-SKI"/>
+                                                                                    </constraints>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="GIẤY PHÉP LÁI XE (*)"/>
+                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="Mặt trước"/>
+                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="desRight" value="Mặt sau"/>
+                                                                                        <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="NO"/>
+                                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenTitle" value="YES"/>
+                                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="allowOpenCamera" value="NO"/>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </view>
+                                                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KvC-me-oux" userLabel="shk stack">
+                                                                                    <rect key="frame" x="0.0" y="205" width="404" height="300"/>
+                                                                                    <subviews>
+                                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wF-eO-Iku" userLabel="SHK imageview 1" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="150"/>
+                                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="150" id="Eij-91-EvS"/>
+                                                                                            </constraints>
+                                                                                            <userDefinedRuntimeAttributes>
+                                                                                                <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="TRANG ĐẦU"/>
+                                                                                                <userDefinedRuntimeAttribute type="string" keyPath="desRight" value="TRANG CUỐI"/>
+                                                                                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="NO"/>
+                                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenTitle" value="YES"/>
+                                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowOpenCamera" value="NO"/>
+                                                                                            </userDefinedRuntimeAttributes>
+                                                                                        </view>
+                                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-YI-l0E" userLabel="SHK imageview 2" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                                            <rect key="frame" x="0.0" y="150" width="404" height="150"/>
+                                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="150" id="5Qn-uk-rC6"/>
+                                                                                            </constraints>
+                                                                                            <userDefinedRuntimeAttributes>
+                                                                                                <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="TRANG THÔNG TIN CÁ NHÂN"/>
+                                                                                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="YES"/>
+                                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenTitle" value="YES"/>
+                                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowOpenCamera" value="NO"/>
+                                                                                            </userDefinedRuntimeAttributes>
+                                                                                        </view>
+                                                                                    </subviews>
+                                                                                </stackView>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHJ-bF-V1p" userLabel="image potrait view" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="435" width="404" height="210"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="210" id="cbl-vz-OUA"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="CHÂN DUNG KHÁCH HÀNG (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="ẢNH KHÁCH HÀNG"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="allowOpenCamera" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SyK-UO-Xyc" userLabel="Image info phone view" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="655" width="404" height="210"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="210" id="Wpt-WJ-rQl"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="THÔNG TIN THUÊ BAO (*)"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="THÔNG TIN THUÊ BAO"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="allowOpenCamera" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-vS-zJx" userLabel="chung tu stackview">
+                                                                    <rect key="frame" x="0.0" y="865" width="404" height="248"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHỨNG TỪ ĐÍNH KÈM (*)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueC-Me-hoT">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="25" id="8Kf-3a-bLM"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                            <color key="textColor" red="0.25882352939999997" green="0.52156862749999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVf-5D-Krt" customClass="CustomTxt" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="25" width="404" height="43"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="43" id="UNL-jC-KFf"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenTitle" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Click chon"/>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="down_arrow_ic"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isButton" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNH-ey-yvx" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="68" width="404" height="180"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="180" id="2oU-iX-ljQ"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="Mặt trước (*)"/>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="desRight" value="Mặt sau (*)"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenTitle" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="add-image-256"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowOpenCamera" value="NO"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giU-d2-5a8">
+                                                    <rect key="frame" x="0.0" y="110" width="404" height="40"/>
+                                                    <color key="backgroundColor" red="0.25882352941176467" green="0.56862745098039214" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="Ajm-Sx-Ftn"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="TẠO HỒ SƠ">
+                                                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="onCreate" destination="-1" eventType="touchUpInside" id="9fH-Hi-Vgy"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Q6w-Wr-sEB" secondAttribute="trailing" constant="5" id="RgY-4l-pQh"/>
+                                        <constraint firstItem="Q6w-Wr-sEB" firstAttribute="top" secondItem="Omg-2D-Bvy" secondAttribute="top" id="VYS-mF-gW4"/>
+                                        <constraint firstAttribute="bottom" secondItem="Q6w-Wr-sEB" secondAttribute="bottom" id="hsy-ww-kIn"/>
+                                        <constraint firstItem="Q6w-Wr-sEB" firstAttribute="leading" secondItem="Omg-2D-Bvy" secondAttribute="leading" constant="5" id="i9y-GR-vXc"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Omg-2D-Bvy" firstAttribute="top" secondItem="fJs-Ya-fsb" secondAttribute="top" id="0qD-WD-ZS6"/>
+                                <constraint firstItem="Omg-2D-Bvy" firstAttribute="leading" secondItem="fJs-Ya-fsb" secondAttribute="leading" id="59X-L0-J9p"/>
+                                <constraint firstAttribute="bottom" secondItem="Omg-2D-Bvy" secondAttribute="bottom" id="V6F-w8-zN5"/>
+                                <constraint firstAttribute="trailing" secondItem="Omg-2D-Bvy" secondAttribute="trailing" id="nbf-fa-VAu"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fJs-Ya-fsb" secondAttribute="trailing" id="9qG-z0-sS8"/>
+                        <constraint firstItem="fJs-Ya-fsb" firstAttribute="top" secondItem="L6Q-tr-rSb" secondAttribute="top" id="GdM-Ql-aFx"/>
+                        <constraint firstItem="Omg-2D-Bvy" firstAttribute="width" secondItem="L6Q-tr-rSb" secondAttribute="width" id="HzI-ZV-YcZ"/>
+                        <constraint firstAttribute="bottom" secondItem="fJs-Ya-fsb" secondAttribute="bottom" id="Tj9-fl-ERj"/>
+                        <constraint firstItem="fJs-Ya-fsb" firstAttribute="leading" secondItem="L6Q-tr-rSb" secondAttribute="leading" id="ydM-XL-QwR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L6Q-tr-rSb" secondAttribute="trailing" id="G1q-te-6FQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="L6Q-tr-rSb" secondAttribute="bottom" id="JLe-vE-WxU"/>
+                <constraint firstItem="L6Q-tr-rSb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MFr-Mq-Vjq"/>
+                <constraint firstItem="L6Q-tr-rSb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zdo-q8-exP"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="83"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add-image-256" width="256" height="256"/>
+        <image name="calendarIC" width="23" height="25"/>
+        <image name="check-1-1" width="100" height="101"/>
+        <image name="check-2" width="25" height="25.5"/>
+        <image name="down_arrow_ic" width="105.5" height="170.5"/>
+        <image name="ic_camera_new" width="40" height="36.5"/>
+        <image name="selected_radio_ic" width="170.5" height="170.5"/>
+        <image name="unselected_radio_ic" width="170.5" height="170.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

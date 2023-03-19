@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DanhGiaVC" customModule="QuickCode" customModuleProvider="target">
+            <connections>
+                <outlet property="saveButton" destination="gyh-bK-snc" id="Qab-yx-x14"/>
+                <outlet property="tableView" destination="zKa-3x-grs" id="hUq-yK-bvM"/>
+                <outlet property="tableViewDanhGia" destination="bSZ-dP-0kb" id="cM3-Ob-B4F"/>
+                <outlet property="tableViewProduct" destination="bSZ-dP-0kb" id="rQ4-yL-gJC"/>
+                <outlet property="tableViewVoucher" destination="zKa-3x-grs" id="xHb-lL-YQU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mPw-D4-A00">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5Z-Es-Li1">
+                            <rect key="frame" x="8" y="0.0" width="414" height="1167.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vIa-qT-XAW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="238.5"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zKa-3x-grs" customClass="UITableViewAutoHeight" customModule="QuickCode" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="56" width="398" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="qYw-fO-OcJ"/>
+                                            </constraints>
+                                            <color key="sectionIndexBackgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="-1" id="VAY-Sr-lxy"/>
+                                                <outlet property="delegate" destination="-1" id="ZlU-Vv-XPm"/>
+                                            </connections>
+                                        </tableView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thông tin đơn hàng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3O-eL-wyr">
+                                            <rect key="frame" x="8" y="111" width="398" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" red="0.2645868361" green="0.52757269139999996" blue="0.41959536079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bSZ-dP-0kb" customClass="UITableViewAutoHeight" customModule="QuickCode" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="135.5" width="398" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="2nV-Xl-H7p"/>
+                                            </constraints>
+                                            <connections>
+                                                <outlet property="dataSource" destination="-1" id="MLR-Gx-Tue"/>
+                                                <outlet property="delegate" destination="-1" id="42Y-nf-A0j"/>
+                                            </connections>
+                                        </tableView>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyh-bK-snc">
+                                            <rect key="frame" x="8" y="190.5" width="398" height="40"/>
+                                            <color key="backgroundColor" red="0.85954636340000001" green="0.2021209598" blue="0.15287378430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="chc-fZ-hr0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="Kiểm tra khuyến mãi">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="saveAcion:" destination="-1" eventType="touchUpInside" id="hDX-yg-e6P"/>
+                                                <action selector="saveButton:" destination="-1" eventType="touchUpInside" id="m1L-O5-228"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="vIa-qT-XAW" secondAttribute="trailing" id="QOf-iS-EZD"/>
+                                <constraint firstItem="vIa-qT-XAW" firstAttribute="top" secondItem="W5Z-Es-Li1" secondAttribute="top" id="Qa4-S5-qbX"/>
+                                <constraint firstAttribute="bottom" secondItem="vIa-qT-XAW" secondAttribute="bottom" id="Svd-ic-Ywc"/>
+                                <constraint firstItem="vIa-qT-XAW" firstAttribute="leading" secondItem="W5Z-Es-Li1" secondAttribute="leading" id="axt-2c-neM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="W5Z-Es-Li1" firstAttribute="leading" secondItem="mPw-D4-A00" secondAttribute="leading" id="Ask-s7-hk1"/>
+                        <constraint firstAttribute="trailing" secondItem="W5Z-Es-Li1" secondAttribute="trailing" id="bO2-NM-m2c"/>
+                        <constraint firstItem="W5Z-Es-Li1" firstAttribute="width" secondItem="mPw-D4-A00" secondAttribute="width" id="gDK-VN-CQa"/>
+                        <constraint firstItem="W5Z-Es-Li1" firstAttribute="top" secondItem="mPw-D4-A00" secondAttribute="top" id="p3l-cS-yBk"/>
+                        <constraint firstAttribute="bottom" secondItem="W5Z-Es-Li1" secondAttribute="bottom" id="zkm-ea-EE9"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mPw-D4-A00" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RFL-gG-XH3"/>
+                <constraint firstItem="mPw-D4-A00" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XJu-RJ-gwy"/>
+                <constraint firstAttribute="bottom" secondItem="mPw-D4-A00" secondAttribute="bottom" id="ca4-hp-KWO"/>
+                <constraint firstItem="mPw-D4-A00" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="obJ-0g-sXX"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

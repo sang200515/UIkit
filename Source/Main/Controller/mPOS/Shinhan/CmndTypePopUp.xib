@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CmndTypePopUp" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="blurView" destination="1Yz-pE-1FX" id="Tk7-4v-aB6"/>
+                <outlet property="radio12So" destination="UUl-vO-za2" id="XEv-cB-Lca"/>
+                <outlet property="radio9so" destination="MZN-cl-CYe" id="Czq-hU-s3r"/>
+                <outlet property="radioCCCD" destination="oBJ-cT-1kC" id="JYw-Xm-OAZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Yz-pE-1FX">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRB-h4-2MA">
+                    <rect key="frame" x="10" y="362" width="394" height="182"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8y-85-mh3">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="37"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOẠI CHỨNG TỪ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhf-cS-bnQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="394" height="37"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.25098039215686274" green="0.56470588235294117" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="Yhf-cS-bnQ" firstAttribute="leading" secondItem="a8y-85-mh3" secondAttribute="leading" id="RS1-1f-bDa"/>
+                                <constraint firstAttribute="trailing" secondItem="Yhf-cS-bnQ" secondAttribute="trailing" id="VFN-DJ-rfW"/>
+                                <constraint firstAttribute="height" constant="37" id="ah5-rq-uay"/>
+                                <constraint firstAttribute="bottom" secondItem="Yhf-cS-bnQ" secondAttribute="bottom" id="gJC-Ys-bVs"/>
+                                <constraint firstItem="Yhf-cS-bnQ" firstAttribute="top" secondItem="a8y-85-mh3" secondAttribute="top" id="yzN-sg-me0"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EeD-Hn-slt">
+                            <rect key="frame" x="5" y="42" width="384" height="135"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-cl-CYe" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="384" height="30"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="AMk-re-ak0"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="unselected_radio_ic"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="selected_radio_ic"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="CMND 9 số"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUl-vO-za2" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="35" width="384" height="30"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="a65-XZ-gFa"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="unselected_radio_ic"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="selected_radio_ic"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="CMND 12 số"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBJ-cT-1kC" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="70" width="384" height="30"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="cMh-JL-F4Z"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="unselected_radio_ic"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="selected_radio_ic"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="CCCD"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFC-9k-mZd">
+                                    <rect key="frame" x="0.0" y="105" width="384" height="30"/>
+                                    <color key="backgroundColor" red="0.25098039215686274" green="0.56470588235294117" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="vru-Km-Cba"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="TIẾP TỤC">
+                                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onContinue:" destination="-1" eventType="touchUpInside" id="dOC-NQ-0KQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="a8y-85-mh3" firstAttribute="top" secondItem="tRB-h4-2MA" secondAttribute="top" id="G5d-qH-i3o"/>
+                        <constraint firstAttribute="trailing" secondItem="a8y-85-mh3" secondAttribute="trailing" id="K0h-2h-UWw"/>
+                        <constraint firstItem="a8y-85-mh3" firstAttribute="leading" secondItem="tRB-h4-2MA" secondAttribute="leading" id="MKg-bx-0ql"/>
+                        <constraint firstAttribute="trailing" secondItem="EeD-Hn-slt" secondAttribute="trailing" constant="5" id="bDo-sq-meF"/>
+                        <constraint firstItem="EeD-Hn-slt" firstAttribute="top" secondItem="a8y-85-mh3" secondAttribute="bottom" constant="5" id="be0-Yv-Emb"/>
+                        <constraint firstAttribute="bottom" secondItem="EeD-Hn-slt" secondAttribute="bottom" constant="5" id="otv-kG-97r"/>
+                        <constraint firstItem="EeD-Hn-slt" firstAttribute="leading" secondItem="tRB-h4-2MA" secondAttribute="leading" constant="5" id="s00-uq-iIc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1Yz-pE-1FX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EXU-py-mj6"/>
+                <constraint firstItem="tRB-h4-2MA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="PxS-5r-cBw"/>
+                <constraint firstItem="1Yz-pE-1FX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="S7f-D3-9H9"/>
+                <constraint firstItem="tRB-h4-2MA" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="d17-hC-LJ6"/>
+                <constraint firstAttribute="bottom" secondItem="1Yz-pE-1FX" secondAttribute="bottom" id="gui-34-lHG"/>
+                <constraint firstItem="tRB-h4-2MA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="kT9-wl-cfC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Yz-pE-1FX" secondAttribute="trailing" id="x52-1M-qXB"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="selected_radio_ic" width="170.5" height="170.5"/>
+        <image name="unselected_radio_ic" width="170.5" height="170.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

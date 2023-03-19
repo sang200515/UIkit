@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="CallTuVanSanPhamMenuCell" customModule="FPTShop_Beta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FCE-fv-gLq">
+                        <rect key="frame" x="5" y="5" width="337" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9CQ-Tl-13S">
+                                <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CallCSKH" translatesAutoresizingMaskIntoConstraints="NO" id="wUq-aG-FMH">
+                                        <rect key="frame" x="12.666666666666668" y="12.666666666666668" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="JdY-yb-1qD"/>
+                                            <constraint firstAttribute="width" constant="35" id="j9h-mW-POJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75686274509803919" green="0.85490196078431369" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wUq-aG-FMH" firstAttribute="centerX" secondItem="9CQ-Tl-13S" secondAttribute="centerX" id="V6W-PZ-Uh8"/>
+                                    <constraint firstAttribute="height" constant="60" id="iUM-A0-DOA"/>
+                                    <constraint firstItem="wUq-aG-FMH" firstAttribute="centerY" secondItem="9CQ-Tl-13S" secondAttribute="centerY" id="kch-t7-ZVP"/>
+                                    <constraint firstAttribute="width" constant="60" id="x1Q-Sb-JUP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYA-N2-0OJ">
+                                <rect key="frame" x="75" y="10" width="252" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="FCE-fv-gLq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="7cp-tK-byQ"/>
+                    <constraint firstAttribute="trailing" secondItem="FCE-fv-gLq" secondAttribute="trailing" constant="5" id="FDQ-AO-qhY"/>
+                    <constraint firstAttribute="bottom" secondItem="FCE-fv-gLq" secondAttribute="bottom" constant="5" id="qlX-hB-YQo"/>
+                    <constraint firstItem="FCE-fv-gLq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="xiJ-jJ-Y7P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="iconImage" destination="wUq-aG-FMH" id="yXU-UN-Q1V"/>
+                <outlet property="titleLabel" destination="mYA-N2-0OJ" id="CnY-Wj-hIy"/>
+            </connections>
+            <point key="canvasLocation" x="57.692307692307693" y="-17.417061611374407"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CallCSKH" width="38" height="39"/>
+    </resources>
+</document>

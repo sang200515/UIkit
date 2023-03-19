@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="fptshop" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tabBarController id="DQC-dU-dRj">
+            <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VU9-ee-4YS">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="selectedImageTintColor" red="0.043137254899999998" green="0.63137254899999995" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </tabBar>
+            <viewControllers>
+                <viewController title="Trang chủ" id="Vrv-tY-Tw6">
+                    <view key="view" contentMode="scaleToFill" id="yfO-Kd-BiG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jwk-Xj-N7R"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trang chủ" image="ic_home" id="KC9-2A-dKn"/>
+                </viewController>
+                <viewController title="Danh bạ" automaticallyAdjustsScrollViewInsets="NO" id="f3n-AW-2eF">
+                    <view key="view" contentMode="scaleToFill" id="Nbv-qc-Quy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Or9-rS-aCG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Danh bạ" image="ic_phonebook" id="B0D-s3-JRJ"/>
+                    <toolbarItems/>
+                </viewController>
+                <viewController title="Thông báo" id="G0H-lN-42b">
+                    <view key="view" contentMode="scaleToFill" id="toV-lt-9vY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="39c-Ry-ovv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Thông báo" image="ic_notification" id="XdJ-Gc-gjs"/>
+                </viewController>
+            </viewControllers>
+            <point key="canvasLocation" x="-422" y="136"/>
+        </tabBarController>
+    </objects>
+    <resources>
+        <image name="ic_home" width="28" height="24"/>
+        <image name="ic_notification" width="21" height="24"/>
+        <image name="ic_phonebook" width="23" height="24"/>
+    </resources>
+</document>

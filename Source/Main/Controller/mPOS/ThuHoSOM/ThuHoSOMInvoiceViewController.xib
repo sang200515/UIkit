@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThuHoSOMInvoiceViewController" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="btnConfirm" destination="llB-br-n2k" id="1yw-6Z-xfM"/>
+                <outlet property="btnSelectAll" destination="bPV-Bv-UUP" id="e9h-q7-liM"/>
+                <outlet property="tbvInvoice" destination="umX-QP-r5I" id="V8e-wX-GCW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="umX-QP-r5I">
+                    <rect key="frame" x="0.0" y="64" width="414" height="718"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2ZV-Ra-ELw"/>
+                        <outlet property="delegate" destination="-1" id="1dG-Tm-UKZ"/>
+                    </connections>
+                </tableView>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="D0A-PM-HBE">
+                    <rect key="frame" x="20" y="802" width="374" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llB-br-n2k">
+                            <rect key="frame" x="0.0" y="0.0" width="177" height="40"/>
+                            <color key="backgroundColor" red="0.25882352941176467" green="0.57647058823529407" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="geE-mP-de9"/>
+                            </constraints>
+                            <state key="normal" title="Xác Nhận">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmButtonPressed:" destination="-1" eventType="touchUpInside" id="7fX-Mo-f7p"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPV-Bv-UUP">
+                            <rect key="frame" x="197" y="0.0" width="177" height="40"/>
+                            <color key="backgroundColor" red="0.14901960784313725" green="0.27450980392156865" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="jFq-8B-va4"/>
+                            </constraints>
+                            <state key="normal" title="Thanh Toán Tất Cả">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="selectAllButtonPressed:" destination="-1" eventType="touchUpInside" id="KCJ-dk-rTf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="umX-QP-r5I" secondAttribute="trailing" id="33b-FK-y1e"/>
+                <constraint firstItem="D0A-PM-HBE" firstAttribute="top" secondItem="umX-QP-r5I" secondAttribute="bottom" constant="20" id="52v-qs-D3u"/>
+                <constraint firstItem="D0A-PM-HBE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="77f-mS-ZoQ"/>
+                <constraint firstItem="umX-QP-r5I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9Wk-bQ-MKm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="D0A-PM-HBE" secondAttribute="bottom" constant="20" id="fnS-bv-WkT"/>
+                <constraint firstItem="umX-QP-r5I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="jNN-Ws-Rbw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D0A-PM-HBE" secondAttribute="trailing" constant="20" id="oIj-5W-ACE"/>
+            </constraints>
+            <point key="canvasLocation" x="-157" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

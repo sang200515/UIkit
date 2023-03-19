@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateCustomerProfile" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="backIDCard" destination="zAd-PS-yk5" id="zVr-09-EDo"/>
+                <outlet property="frontIDCard" destination="v7o-Nr-T48" id="f8J-a7-MH3"/>
+                <outlet property="saveButton" destination="8G6-OC-cNn" id="njO-GB-XYu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C00-k9-cDF">
+                    <rect key="frame" x="10" y="54" width="394" height="398.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vui lòng chụp ảnh CMND/CCCD trước khi tạo hồ sơ khách hàng." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orn-Ad-75h">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="38.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7o-Nr-T48" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="48.5" width="394" height="170"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="170" id="fA8-xH-07w"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="Bấm vào đây để chụp ảnh"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowSelectLibrary" value="NO"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value=" Mặt trước CMND/CCCD:"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowOpenCamera" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAd-PS-yk5" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="228.5" width="394" height="170"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="170" id="XCg-0u-XiB"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="Bấm vào đây để chụp ảnh"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowSelectLibrary" value="NO"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Mặt sau CMND/CCCD:"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowOpenCamera" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-OC-cNn">
+                    <rect key="frame" x="10" y="812" width="394" height="40"/>
+                    <color key="backgroundColor" red="0.035294117649999998" green="0.6705882353" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="1Ev-l6-dq2"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="3jH-q3-gwN"/>
+                        <constraint firstAttribute="height" constant="40" id="m3c-no-cCq"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="yDI-FD-k3D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Tiếp theo">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClickContinue:" destination="-1" eventType="touchUpInside" id="BQf-pX-Plr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8G6-OC-cNn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="4lt-Ul-yqV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8G6-OC-cNn" secondAttribute="trailing" constant="10" id="4sb-r3-Cda"/>
+                <constraint firstItem="C00-k9-cDF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Ejd-Ry-iNV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="C00-k9-cDF" secondAttribute="trailing" constant="10" id="R3s-iT-Qo7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8G6-OC-cNn" secondAttribute="bottom" constant="10" id="aNf-EL-znS"/>
+                <constraint firstItem="C00-k9-cDF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="hGe-Cz-nyM"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_camera_new" width="40" height="36.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

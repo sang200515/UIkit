@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryChangeSimItelVC" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="fromDate" destination="Ume-i2-bNj" id="7lt-Pm-teF"/>
+                <outlet property="phonetxt" destination="3hM-8e-Ka1" id="5so-Ne-Zm2"/>
+                <outlet property="tableView" destination="VHA-SX-N9V" id="RRl-CL-9IO"/>
+                <outlet property="toDate" destination="px1-9j-xQy" id="R2T-wh-1UL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJB-d7-srU">
+                    <rect key="frame" x="0.0" y="60" width="414" height="191"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="U6B-rU-iaW">
+                            <rect key="frame" x="10" y="0.0" width="394" height="191"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ojN-dX-8VD">
+                                    <rect key="frame" x="0.0" y="0.0" width="394" height="57"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số thuê bao hoặc Serial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdc-3I-4kR">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" systemColor="systemGrayColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3hM-8e-Ka1" customClass="TextFieldCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="17" width="394" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="BVg-ww-abA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="leftImg" value="Phone-50"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xsa-KU-fhX">
+                                    <rect key="frame" x="0.0" y="73" width="394" height="57"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g1t-Sx-V9g">
+                                            <rect key="frame" x="0.0" y="0.0" width="189" height="57"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Từ ngày" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yc-ko-3pg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="189" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-i2-bNj" customClass="TextFieldCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="17" width="189" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="gjK-Cj-4ru"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="calendar_ic"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isDate" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dUz-Es-eRo">
+                                            <rect key="frame" x="205" y="0.0" width="189" height="57"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đến ngày" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-Xv-7jV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="189" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="px1-9j-xQy" customClass="TextFieldCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="17" width="189" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="e4V-IZ-9Gx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImg" value="calendar_ic"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isDate" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoE-Gy-aRC">
+                                    <rect key="frame" x="0.0" y="146" width="394" height="45"/>
+                                    <color key="backgroundColor" red="0.035294117649999998" green="0.6705882353" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Hkp-O2-sVv"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="TÌM KIẾM">
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onSearch" destination="-1" eventType="touchUpInside" id="USS-gg-neU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="U6B-rU-iaW" secondAttribute="bottom" id="Kd9-Rx-OEo"/>
+                        <constraint firstItem="U6B-rU-iaW" firstAttribute="top" secondItem="YJB-d7-srU" secondAttribute="top" id="QTF-XZ-zgk"/>
+                        <constraint firstAttribute="trailing" secondItem="U6B-rU-iaW" secondAttribute="trailing" constant="10" id="g7w-J8-6q8"/>
+                        <constraint firstItem="U6B-rU-iaW" firstAttribute="leading" secondItem="YJB-d7-srU" secondAttribute="leading" constant="10" id="vgG-h8-OwD"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VHA-SX-N9V">
+                    <rect key="frame" x="5" y="267" width="404" height="595"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="YJB-d7-srU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Gb-EG-Dv3"/>
+                <constraint firstItem="VHA-SX-N9V" firstAttribute="top" secondItem="YJB-d7-srU" secondAttribute="bottom" constant="16" id="5cc-t5-mUJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VHA-SX-N9V" secondAttribute="trailing" constant="5" id="AJ2-9E-eNH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VHA-SX-N9V" secondAttribute="bottom" id="Ias-Hg-4X5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YJB-d7-srU" secondAttribute="trailing" id="Vzw-m1-bwh"/>
+                <constraint firstItem="YJB-d7-srU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="dPO-pw-9Ji"/>
+                <constraint firstItem="VHA-SX-N9V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="eCC-9Y-UNN"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="87"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="3hM-8e-Ka1">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="Ume-i2-bNj">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="px1-9j-xQy">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Phone-50" width="25" height="25"/>
+        <image name="calendar_ic" width="170.5" height="170.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

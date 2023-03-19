@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoooseThanhPhoVCPopupVC" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="joa-2p-3xT" id="9tn-xr-79W"/>
+                <outlet property="tableView" destination="fn2-cV-qX5" id="sOP-7X-VKl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tìm kiếm Tỉnh/Thành phố" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiB-bc-iR3">
+                    <rect key="frame" x="10" y="64" width="394" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="joa-2p-3xT">
+                    <rect key="frame" x="10" y="95" width="394" height="51"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fn2-cV-qX5">
+                    <rect key="frame" x="10" y="156" width="394" height="730"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="eFr-zL-VCG"/>
+                        <outlet property="delegate" destination="-1" id="ZNE-bx-2ki"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fn2-cV-qX5" secondAttribute="bottom" constant="10" id="1dg-Bv-EJp"/>
+                <constraint firstItem="joa-2p-3xT" firstAttribute="top" secondItem="QiB-bc-iR3" secondAttribute="bottom" constant="10" id="CQf-Br-t2M"/>
+                <constraint firstItem="joa-2p-3xT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Nj6-iq-oZ2"/>
+                <constraint firstItem="fn2-cV-qX5" firstAttribute="top" secondItem="joa-2p-3xT" secondAttribute="bottom" constant="10" id="Y3L-xJ-Vjm"/>
+                <constraint firstItem="QiB-bc-iR3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="cOx-7x-htW"/>
+                <constraint firstAttribute="trailing" secondItem="fn2-cV-qX5" secondAttribute="trailing" constant="10" id="eAS-9U-Xla"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QiB-bc-iR3" secondAttribute="trailing" constant="10" id="sVU-bh-pMx"/>
+                <constraint firstItem="QiB-bc-iR3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="xH2-am-4uL"/>
+                <constraint firstItem="fn2-cV-qX5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="yyf-C9-rJ9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="joa-2p-3xT" secondAttribute="trailing" constant="10" id="zse-RA-oer"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

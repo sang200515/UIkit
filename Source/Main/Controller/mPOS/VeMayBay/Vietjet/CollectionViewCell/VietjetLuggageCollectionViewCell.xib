@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VietjetLuggageCollectionViewCell" customModule="FPTShop_Beta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="301"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="301"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iD-RJ-zC4">
+                        <rect key="frame" x="0.0" y="44" width="349" height="257"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luggage_ic" translatesAutoresizingMaskIntoConstraints="NO" id="LzK-3s-tTe">
+                                <rect key="frame" x="159.5" y="197" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LzK-3s-tTe" secondAttribute="height" multiplier="1:1" id="5Iz-ns-YHY"/>
+                                    <constraint firstAttribute="width" constant="30" id="jaW-y1-eUB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unselected_ic" translatesAutoresizingMaskIntoConstraints="NO" id="Kxx-M3-Rfo">
+                                <rect key="frame" x="329" y="5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="Wh8-R0-W3Y"/>
+                                    <constraint firstAttribute="width" secondItem="Kxx-M3-Rfo" secondAttribute="height" multiplier="1:1" id="hKn-a7-5y2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gói 15kg" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGQ-gf-agh">
+                                <rect key="frame" x="20" y="177.5" width="309" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="335,000 VNĐ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woC-gF-o0l">
+                                <rect key="frame" x="5" y="232" width="339" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="aYS-4y-Zas"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" red="0.81568627450980391" green="0.0078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kxx-M3-Rfo" secondAttribute="trailing" constant="5" id="BNd-Nr-GW6"/>
+                            <constraint firstItem="Kxx-M3-Rfo" firstAttribute="top" secondItem="2iD-RJ-zC4" secondAttribute="top" constant="5" id="Blx-SV-DuR"/>
+                            <constraint firstItem="woC-gF-o0l" firstAttribute="leading" secondItem="2iD-RJ-zC4" secondAttribute="leading" constant="5" id="HaE-ds-IRC"/>
+                            <constraint firstItem="LzK-3s-tTe" firstAttribute="top" secondItem="xGQ-gf-agh" secondAttribute="bottom" constant="5" id="KTw-4l-OP1"/>
+                            <constraint firstItem="Kxx-M3-Rfo" firstAttribute="leading" secondItem="xGQ-gf-agh" secondAttribute="trailing" id="PfI-Be-QIx"/>
+                            <constraint firstItem="woC-gF-o0l" firstAttribute="top" secondItem="LzK-3s-tTe" secondAttribute="bottom" constant="5" id="UX0-L4-fzx"/>
+                            <constraint firstItem="LzK-3s-tTe" firstAttribute="centerX" secondItem="2iD-RJ-zC4" secondAttribute="centerX" id="VPG-Zr-oOi"/>
+                            <constraint firstAttribute="bottom" secondItem="woC-gF-o0l" secondAttribute="bottom" constant="5" id="ia2-F1-G5e"/>
+                            <constraint firstItem="woC-gF-o0l" firstAttribute="centerX" secondItem="LzK-3s-tTe" secondAttribute="centerX" id="jd9-rZ-v6Y"/>
+                            <constraint firstItem="xGQ-gf-agh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2iD-RJ-zC4" secondAttribute="top" constant="5" id="n1W-C7-Sf8"/>
+                            <constraint firstItem="xGQ-gf-agh" firstAttribute="centerX" secondItem="LzK-3s-tTe" secondAttribute="centerX" id="wHF-VF-537"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="2iD-RJ-zC4" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="4D6-tE-0gQ"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="2iD-RJ-zC4" secondAttribute="trailing" id="8kK-6N-Wlb"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="2iD-RJ-zC4" secondAttribute="bottom" id="hZL-4z-wDc"/>
+                <constraint firstItem="2iD-RJ-zC4" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="yl3-jl-pHE"/>
+            </constraints>
+            <size key="customSize" width="349" height="301"/>
+            <connections>
+                <outlet property="imgSelected" destination="Kxx-M3-Rfo" id="g9H-gV-due"/>
+                <outlet property="lbName" destination="xGQ-gf-agh" id="2hb-fT-NRK"/>
+                <outlet property="lbPrice" destination="woC-gF-o0l" id="BY9-7N-qBT"/>
+                <outlet property="vBackground" destination="2iD-RJ-zC4" id="WfV-h9-Vhj"/>
+            </connections>
+            <point key="canvasLocation" x="348.55072463768118" y="171.76339285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="luggage_ic" width="170.5" height="170.5"/>
+        <image name="unselected_ic" width="170.5" height="170.5"/>
+    </resources>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="252" id="KGk-i7-Jjw" customClass="VietjetSeatTableViewCell" customModule="FPTShop_Beta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="506" height="252"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="506" height="252"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z7T-I7-EMP">
+                        <rect key="frame" x="0.0" y="0.0" width="506" height="237"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seat_unavailable_ic" translatesAutoresizingMaskIntoConstraints="NO" id="BPc-rh-eR4">
+                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="237"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seat_unavailable_ic" translatesAutoresizingMaskIntoConstraints="NO" id="Pe4-Pc-e8R">
+                                <rect key="frame" x="73.5" y="0.0" width="64" height="237"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seat_unavailable_ic" translatesAutoresizingMaskIntoConstraints="NO" id="Q5q-Sk-RgN">
+                                <rect key="frame" x="147.5" y="0.0" width="63.5" height="237"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQr-K4-9PY">
+                                <rect key="frame" x="221" y="0.0" width="64" height="237"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmd-Mi-Ezy">
+                                        <rect key="frame" x="26.5" y="108" width="11.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qmd-Mi-Ezy" firstAttribute="centerX" secondItem="BQr-K4-9PY" secondAttribute="centerX" id="EcX-aD-cmh"/>
+                                    <constraint firstItem="qmd-Mi-Ezy" firstAttribute="centerY" secondItem="BQr-K4-9PY" secondAttribute="centerY" id="gkN-M3-1cc"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seat_unavailable_ic" translatesAutoresizingMaskIntoConstraints="NO" id="E6g-Ws-nQ1">
+                                <rect key="frame" x="295" y="0.0" width="63.5" height="237"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seat_unavailable_ic" translatesAutoresizingMaskIntoConstraints="NO" id="WNI-GL-dr8">
+                                <rect key="frame" x="368.5" y="0.0" width="64" height="237"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seat_unavailable_ic" translatesAutoresizingMaskIntoConstraints="NO" id="WzO-lw-7Qu">
+                                <rect key="frame" x="442.5" y="0.0" width="63.5" height="237"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bx6-cd-hbD">
+                        <rect key="frame" x="0.0" y="0.0" width="506" height="237"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4X-0v-1qW">
+                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="237"/>
+                                <connections>
+                                    <action selector="selectSeatButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ufQ-pO-wO0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKc-MG-bFC">
+                                <rect key="frame" x="73.5" y="0.0" width="64" height="237"/>
+                                <connections>
+                                    <action selector="selectSeatButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XkZ-E9-z5T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgN-Ih-31I">
+                                <rect key="frame" x="147.5" y="0.0" width="63.5" height="237"/>
+                                <connections>
+                                    <action selector="selectSeatButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="14I-KY-Cpt"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbo-KW-cfP">
+                                <rect key="frame" x="221" y="0.0" width="64" height="237"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0Q-Hy-hMu">
+                                <rect key="frame" x="295" y="0.0" width="63.5" height="237"/>
+                                <connections>
+                                    <action selector="selectSeatButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JfZ-CM-G9Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOx-Jl-mr9">
+                                <rect key="frame" x="368.5" y="0.0" width="64" height="237"/>
+                                <connections>
+                                    <action selector="selectSeatButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GoH-pQ-nAJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfk-vF-gSk">
+                                <rect key="frame" x="442.5" y="0.0" width="63.5" height="237"/>
+                                <connections>
+                                    <action selector="selectSeatButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="svM-eV-IEG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="z7T-I7-EMP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Lp8-bG-o0R"/>
+                    <constraint firstItem="bx6-cd-hbD" firstAttribute="centerX" secondItem="z7T-I7-EMP" secondAttribute="centerX" id="TFb-qr-QZF"/>
+                    <constraint firstItem="bx6-cd-hbD" firstAttribute="height" secondItem="z7T-I7-EMP" secondAttribute="height" id="adv-ca-WX8"/>
+                    <constraint firstItem="z7T-I7-EMP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dXn-6S-t0T"/>
+                    <constraint firstItem="bx6-cd-hbD" firstAttribute="centerY" secondItem="z7T-I7-EMP" secondAttribute="centerY" id="jhA-Aw-HbN"/>
+                    <constraint firstItem="z7T-I7-EMP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pDW-BH-8SO"/>
+                    <constraint firstAttribute="bottom" secondItem="z7T-I7-EMP" secondAttribute="bottom" constant="15" id="qvn-Um-KTE"/>
+                    <constraint firstItem="bx6-cd-hbD" firstAttribute="width" secondItem="z7T-I7-EMP" secondAttribute="width" id="wyL-Gc-KRE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbIndex" destination="qmd-Mi-Ezy" id="oTY-Qd-Oq1"/>
+                <outletCollection property="imgSeats" destination="BPc-rh-eR4" collectionClass="NSMutableArray" id="jg6-CP-Df5"/>
+                <outletCollection property="imgSeats" destination="Pe4-Pc-e8R" collectionClass="NSMutableArray" id="LxW-qt-BT9"/>
+                <outletCollection property="imgSeats" destination="Q5q-Sk-RgN" collectionClass="NSMutableArray" id="Tmz-B7-GNP"/>
+                <outletCollection property="imgSeats" destination="E6g-Ws-nQ1" collectionClass="NSMutableArray" id="atb-9F-tZZ"/>
+                <outletCollection property="imgSeats" destination="WNI-GL-dr8" collectionClass="NSMutableArray" id="4jj-Tq-IUQ"/>
+                <outletCollection property="imgSeats" destination="WzO-lw-7Qu" collectionClass="NSMutableArray" id="pCN-KF-cay"/>
+            </connections>
+            <point key="canvasLocation" x="266.66666666666669" y="157.36607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="seat_unavailable_ic" width="40" height="62"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

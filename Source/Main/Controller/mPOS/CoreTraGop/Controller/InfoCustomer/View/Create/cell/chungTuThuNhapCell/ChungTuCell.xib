@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="KGk-i7-Jjw" customClass="ChungTuCell" customModule="QuickCode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTj-Jm-6aI" customClass="ImageFrameCustom" customModule="QuickCode" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="352" height="163"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="Bấm vào đây để chụp ảnh"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Dev"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mTj-Jm-6aI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="74Z-3A-mKc"/>
+                    <constraint firstItem="mTj-Jm-6aI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KQv-QG-Oz5"/>
+                    <constraint firstAttribute="bottom" secondItem="mTj-Jm-6aI" secondAttribute="bottom" id="LXN-gA-HtS"/>
+                    <constraint firstAttribute="trailing" secondItem="mTj-Jm-6aI" secondAttribute="trailing" id="SFb-gV-PiS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ChungTuView" destination="mTj-Jm-6aI" id="kTB-NX-1ow"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="109.48660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

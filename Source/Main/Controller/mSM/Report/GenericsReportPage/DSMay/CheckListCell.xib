@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="CheckListCell" customModule="FPTShop_Beta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYb-fL-GMj">
+                        <rect key="frame" x="10" y="5" width="270" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="y6T-Dg-naH">
+                        <rect key="frame" x="285" y="9.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="kB3-Gs-Ied"/>
+                            <constraint firstAttribute="width" constant="25" id="uGq-3E-7f9"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y6T-Dg-naH" firstAttribute="centerY" secondItem="YYb-fL-GMj" secondAttribute="centerY" id="BqL-bv-RK6"/>
+                    <constraint firstAttribute="trailing" secondItem="y6T-Dg-naH" secondAttribute="trailing" constant="10" id="Tpz-xO-0o2"/>
+                    <constraint firstItem="YYb-fL-GMj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Ty4-YV-HfJ"/>
+                    <constraint firstItem="y6T-Dg-naH" firstAttribute="leading" secondItem="YYb-fL-GMj" secondAttribute="trailing" constant="5" id="lza-Iq-whN"/>
+                    <constraint firstItem="YYb-fL-GMj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="uKk-ZJ-ieY"/>
+                    <constraint firstAttribute="bottom" secondItem="YYb-fL-GMj" secondAttribute="bottom" constant="5" id="vmV-oq-xTI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageCheck" destination="y6T-Dg-naH" id="6DU-b6-Ql8"/>
+                <outlet property="nameLabel" destination="YYb-fL-GMj" id="seT-kk-hKE"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="56.919642857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check-2-1" width="100" height="101"/>
+    </resources>
+</document>

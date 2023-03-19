@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectVietjetFlightDateViewController" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="btnContinue" destination="BeQ-R4-qSR" id="PFk-vK-0fa"/>
+                <outlet property="lbFromDate" destination="3FU-y2-XYW" id="cGp-fX-cJ7"/>
+                <outlet property="lbToDate" destination="D9m-Ns-lcc" id="IGw-zn-vdB"/>
+                <outlet property="tbvCalendar" destination="TUR-FE-fnR" id="k1n-Lx-zbk"/>
+                <outlet property="vFromDate" destination="YeI-jU-ieb" id="fa2-kJ-7Ce"/>
+                <outlet property="vTableBackground" destination="VyW-d9-37P" id="R2T-bT-9JX"/>
+                <outlet property="vToDate" destination="98D-Ea-Jyq" id="hU8-9q-oxo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2Hy-c0-aXm">
+                    <rect key="frame" x="15" y="59" width="384" height="55"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeI-jU-ieb">
+                            <rect key="frame" x="0.0" y="0.0" width="184.5" height="55"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_ic" translatesAutoresizingMaskIntoConstraints="NO" id="7GU-C5-NVT">
+                                    <rect key="frame" x="15" y="15" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="7GU-C5-NVT" secondAttribute="height" multiplier="1:1" id="cRm-39-K6S"/>
+                                        <constraint firstAttribute="width" constant="25" id="kYa-ID-Hra"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày đi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2n-ak-6Np">
+                                    <rect key="frame" x="55" y="5" width="50.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/04/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FU-y2-XYW">
+                                    <rect key="frame" x="55" y="30.5" width="88.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="A2n-ak-6Np" firstAttribute="top" secondItem="YeI-jU-ieb" secondAttribute="top" constant="5" id="8Lr-m1-Edr"/>
+                                <constraint firstItem="7GU-C5-NVT" firstAttribute="leading" secondItem="YeI-jU-ieb" secondAttribute="leading" constant="15" id="aZP-Op-UYF"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3FU-y2-XYW" secondAttribute="trailing" constant="15" id="jDd-Sa-PfD"/>
+                                <constraint firstItem="3FU-y2-XYW" firstAttribute="leading" secondItem="A2n-ak-6Np" secondAttribute="leading" id="lj5-YD-dU3"/>
+                                <constraint firstAttribute="bottom" secondItem="3FU-y2-XYW" secondAttribute="bottom" constant="5" id="ndV-sB-lwO"/>
+                                <constraint firstItem="A2n-ak-6Np" firstAttribute="leading" secondItem="7GU-C5-NVT" secondAttribute="trailing" constant="15" id="oUT-41-xnD"/>
+                                <constraint firstItem="7GU-C5-NVT" firstAttribute="centerY" secondItem="YeI-jU-ieb" secondAttribute="centerY" id="oye-Ng-Q8H"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98D-Ea-Jyq">
+                            <rect key="frame" x="199.5" y="0.0" width="184.5" height="55"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_ic" translatesAutoresizingMaskIntoConstraints="NO" id="sRl-cj-dW3">
+                                    <rect key="frame" x="15" y="15" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="sRl-cj-dW3" secondAttribute="height" multiplier="1:1" id="TkW-HS-9Xr"/>
+                                        <constraint firstAttribute="width" constant="25" id="oSH-NL-aeB"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày về" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iem-WU-SP1">
+                                    <rect key="frame" x="55" y="5" width="53.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/04/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9m-Ns-lcc">
+                                    <rect key="frame" x="55" y="30.5" width="88.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="iem-WU-SP1" firstAttribute="top" secondItem="98D-Ea-Jyq" secondAttribute="top" constant="5" id="0bF-bu-Azf"/>
+                                <constraint firstItem="sRl-cj-dW3" firstAttribute="centerY" secondItem="98D-Ea-Jyq" secondAttribute="centerY" id="MWY-QQ-pwW"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D9m-Ns-lcc" secondAttribute="trailing" constant="15" id="UXP-gG-eyO"/>
+                                <constraint firstItem="D9m-Ns-lcc" firstAttribute="leading" secondItem="iem-WU-SP1" secondAttribute="leading" id="UeJ-QO-Egz"/>
+                                <constraint firstItem="sRl-cj-dW3" firstAttribute="leading" secondItem="98D-Ea-Jyq" secondAttribute="leading" constant="15" id="WFB-2a-bzh"/>
+                                <constraint firstAttribute="bottom" secondItem="D9m-Ns-lcc" secondAttribute="bottom" constant="5" id="n3g-HP-4Eh"/>
+                                <constraint firstItem="iem-WU-SP1" firstAttribute="leading" secondItem="sRl-cj-dW3" secondAttribute="trailing" constant="15" id="nRf-sz-o3B"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="jjh-W7-DUh"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyW-d9-37P">
+                    <rect key="frame" x="15" y="144" width="384" height="638"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TUR-FE-fnR">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="638"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="tTL-cA-E46"/>
+                                <outlet property="delegate" destination="-1" id="gzo-Da-HgV"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="TUR-FE-fnR" firstAttribute="top" secondItem="VyW-d9-37P" secondAttribute="top" id="0bu-ff-eBv"/>
+                        <constraint firstItem="TUR-FE-fnR" firstAttribute="centerY" secondItem="VyW-d9-37P" secondAttribute="centerY" id="998-Zk-sXe"/>
+                        <constraint firstItem="TUR-FE-fnR" firstAttribute="centerX" secondItem="VyW-d9-37P" secondAttribute="centerX" id="LV3-Bh-Zcq"/>
+                        <constraint firstItem="TUR-FE-fnR" firstAttribute="leading" secondItem="VyW-d9-37P" secondAttribute="leading" id="S0d-w5-Jgc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeQ-R4-qSR">
+                    <rect key="frame" x="20" y="802" width="374" height="40"/>
+                    <color key="backgroundColor" red="0.062745098040000002" green="0.68627450980000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ksp-mT-NQH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal" title="TIẾP TỤC">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="continueButtonPressed:" destination="-1" eventType="touchUpInside" id="CP9-Ve-FVQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BeQ-R4-qSR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3AU-mZ-biZ"/>
+                <constraint firstItem="VyW-d9-37P" firstAttribute="leading" secondItem="2Hy-c0-aXm" secondAttribute="leading" id="6yD-YB-Q3r"/>
+                <constraint firstItem="BeQ-R4-qSR" firstAttribute="top" secondItem="VyW-d9-37P" secondAttribute="bottom" constant="20" id="8fL-wG-kJC"/>
+                <constraint firstItem="2Hy-c0-aXm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="GDp-OG-zSW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BeQ-R4-qSR" secondAttribute="bottom" constant="20" id="II5-mM-Or8"/>
+                <constraint firstItem="BeQ-R4-qSR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="KET-Mq-njJ"/>
+                <constraint firstItem="VyW-d9-37P" firstAttribute="top" secondItem="2Hy-c0-aXm" secondAttribute="bottom" constant="30" id="XDA-N5-2kP"/>
+                <constraint firstItem="VyW-d9-37P" firstAttribute="centerX" secondItem="2Hy-c0-aXm" secondAttribute="centerX" id="aaU-NV-1Hy"/>
+                <constraint firstItem="2Hy-c0-aXm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="kZg-c5-jOf"/>
+                <constraint firstItem="2Hy-c0-aXm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="tk2-uQ-Y7G"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar_ic" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

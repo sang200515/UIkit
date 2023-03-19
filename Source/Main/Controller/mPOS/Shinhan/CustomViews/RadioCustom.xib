@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Wjy-4E-fXb"/>
+                <outlet property="imgRadio" destination="7sl-Wv-7Dv" id="0qe-pt-wUf"/>
+                <outlet property="titleLabel" destination="UDt-zd-TG5" id="HeM-7f-OQ5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIH-Bg-zGU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7sl-Wv-7Dv">
+                            <rect key="frame" x="5" y="43.5" width="25" height="26.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="K21-Hb-aq8"/>
+                                <constraint firstAttribute="width" constant="25" id="kX0-yD-D0m"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDt-zd-TG5">
+                            <rect key="frame" x="35" y="5" width="374" height="108"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sax-c7-rhT">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=" "/>
+                            <connections>
+                                <action selector="onAction:" destination="-1" eventType="touchUpInside" id="yTw-yS-Mpp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7sl-Wv-7Dv" firstAttribute="centerY" secondItem="jIH-Bg-zGU" secondAttribute="centerY" id="644-we-skQ"/>
+                        <constraint firstItem="UDt-zd-TG5" firstAttribute="leading" secondItem="7sl-Wv-7Dv" secondAttribute="trailing" constant="5" id="936-V7-Alw"/>
+                        <constraint firstAttribute="trailing" secondItem="sax-c7-rhT" secondAttribute="trailing" id="F84-vp-0U6"/>
+                        <constraint firstItem="sax-c7-rhT" firstAttribute="leading" secondItem="jIH-Bg-zGU" secondAttribute="leading" id="H7N-DF-3fY"/>
+                        <constraint firstAttribute="bottom" secondItem="sax-c7-rhT" secondAttribute="bottom" id="HFq-P6-Hu6"/>
+                        <constraint firstItem="sax-c7-rhT" firstAttribute="top" secondItem="jIH-Bg-zGU" secondAttribute="top" id="JrU-8V-seh"/>
+                        <constraint firstAttribute="trailing" secondItem="UDt-zd-TG5" secondAttribute="trailing" constant="5" id="VY0-BH-RJb"/>
+                        <constraint firstAttribute="bottom" secondItem="UDt-zd-TG5" secondAttribute="bottom" constant="5" id="VaH-ot-Sqe"/>
+                        <constraint firstItem="UDt-zd-TG5" firstAttribute="centerY" secondItem="jIH-Bg-zGU" secondAttribute="centerY" id="Vzy-Nn-eRY"/>
+                        <constraint firstItem="7sl-Wv-7Dv" firstAttribute="leading" secondItem="jIH-Bg-zGU" secondAttribute="leading" constant="5" id="hWq-gK-1vV"/>
+                        <constraint firstItem="UDt-zd-TG5" firstAttribute="top" secondItem="jIH-Bg-zGU" secondAttribute="top" constant="5" id="lCp-hU-DOI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jIH-Bg-zGU" secondAttribute="bottom" id="9cZ-zE-12M"/>
+                <constraint firstItem="jIH-Bg-zGU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ww6-eS-nFw"/>
+                <constraint firstItem="jIH-Bg-zGU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gfm-Hh-MvT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jIH-Bg-zGU" secondAttribute="trailing" id="iy8-oL-Daw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-178.79464285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="radio.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

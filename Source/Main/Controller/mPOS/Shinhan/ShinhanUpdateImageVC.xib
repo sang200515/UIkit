@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShinhanUpdateImageVC" customModule="FPTShop_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="chandungView" destination="drh-Oa-2Bu" id="zfB-FG-OyS"/>
+                <outlet property="cmndView" destination="Ego-rC-FSm" id="m62-Pn-6Is"/>
+                <outlet property="gplxRadio" destination="GKu-oi-Gun" id="TAm-Xs-Tck"/>
+                <outlet property="gplxView" destination="0HE-2a-hfg" id="kJt-e3-PsQ"/>
+                <outlet property="infoThueBaoView" destination="Irf-mc-ztL" id="2XY-s2-NhH"/>
+                <outlet property="khoanVayListView" destination="zdB-gR-pGS" id="9ZH-hw-TUk"/>
+                <outlet property="shkImgView1" destination="Gca-WG-Vle" id="fZm-fb-h1m"/>
+                <outlet property="shkImgView2" destination="8IE-Oq-cXz" id="W1e-sy-XOz"/>
+                <outlet property="shkRadio" destination="cJj-Xb-kPL" id="T1a-S1-ylS"/>
+                <outlet property="shkStack" destination="Zrc-jK-VxH" id="mjU-0v-Rgb"/>
+                <outlet property="stackKhoanVay" destination="eam-gO-qVU" id="0tD-8U-qNO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXV-B2-46I">
+                    <rect key="frame" x="0.0" y="44" width="414" height="754"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6E-0l-CM5">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="745.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u4X-Nx-trD">
+                                    <rect key="frame" x="10" y="0.0" width="394" height="745.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ego-rC-FSm" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="130"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="130" id="Y8h-dc-Gm7"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="CMND/CCCD"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="Mặt trước"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="desRight" value="Mặt sau"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="63i-oZ-phx" userLabel="Stack gplx/shk">
+                                            <rect key="frame" x="0.0" y="140" width="394" height="220"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GIẤY PHÉP LÁI XE/ SỔ HỘ KHẨU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilk-5e-MRf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Kmd-Kk-CDN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.25882352939999997" green="0.52156862749999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yZa-ML-TUe" userLabel="Stack gplx">
+                                                    <rect key="frame" x="0.0" y="35" width="394" height="185"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="alI-nI-jeV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="55"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loại giấy tờ (*)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS9-L2-uxN">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="10"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-uH-TKy">
+                                                                    <rect key="frame" x="0.0" y="15" width="394" height="40"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKu-oi-Gun" userLabel="Radio gplx" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="192" height="40"/>
+                                                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="unselected_radio_ic"/>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="selected_radio_ic"/>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="Giấy phép lái xe"/>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                                    <integer key="value" value="3"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJj-Xb-kPL" userLabel="Radio shk" customClass="RadioCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                            <rect key="frame" x="202" y="0.0" width="192" height="40"/>
+                                                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="defaultImg" value="unselected_radio_ic"/>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="selectImg" value="selected_radio_ic"/>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="textLabel" value="Sổ hộ khẩu"/>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="tagView">
+                                                                                    <integer key="value" value="4"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="WFQ-8N-kK0"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="55" id="9rj-iq-W9w"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HE-2a-hfg" userLabel="gplx View" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="55" width="394" height="130"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="130" id="mh0-Uw-wGw"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="GIẤY PHÉP LÁI XE"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="NO"/>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="Mặt trước"/>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="desRight" value="Mặt sau"/>
+                                                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenTitle" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zrc-jK-VxH" userLabel="shk stack">
+                                                            <rect key="frame" x="0.0" y="185" width="394" height="300"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gca-WG-Vle" userLabel="SHK imageview 1" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="150"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="150" id="Se8-hZ-c4h"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="TRANG ĐẦU"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="desRight" value="TRANG CUỐI"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="NO"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenTitle" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8IE-Oq-cXz" userLabel="SHK imageview 2" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="150" width="394" height="150"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="150" id="3t7-F0-gtW"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="TRANG THÔNG TIN CÁ NHÂN"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenTitle" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drh-Oa-2Bu" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="370" width="394" height="130"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="130" id="wve-UK-egn"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="CHÂN DUNG KHÁCH HÀNG"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="ẢNH KHÁCH HÀNG"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Irf-mc-ztL" customClass="ImageFrameCustom" customModule="FPTShop_Beta" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="510" width="394" height="130"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="130" id="Ent-3F-7wo"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="THÔNG TIN THUÊ BAO"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hiddenRight" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="desLeft" value="THÔNG TIN THUÊ BAO"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_camera_new"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eam-gO-qVU">
+                                            <rect key="frame" x="0.0" y="650" width="394" height="95.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG TIN KHOẢN VAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Cm-Apy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.08235294118" green="0.72156862749999995" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdB-gR-pGS" customClass="ListImageView" customModule="FPTShop_Beta" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="25.5" width="394" height="70"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="ioQ-B1-pTR"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImg" value="ic_add_new"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="u4X-Nx-trD" firstAttribute="top" secondItem="y6E-0l-CM5" secondAttribute="top" id="Y40-bH-sIs"/>
+                                <constraint firstAttribute="trailing" secondItem="u4X-Nx-trD" secondAttribute="trailing" constant="10" id="aAl-h8-SeT"/>
+                                <constraint firstItem="u4X-Nx-trD" firstAttribute="leading" secondItem="y6E-0l-CM5" secondAttribute="leading" constant="10" id="iK4-My-R2U"/>
+                                <constraint firstAttribute="bottom" secondItem="u4X-Nx-trD" secondAttribute="bottom" id="zC7-yy-Pec"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="y6E-0l-CM5" firstAttribute="leading" secondItem="KXV-B2-46I" secondAttribute="leading" id="2CA-wS-0RR"/>
+                        <constraint firstItem="y6E-0l-CM5" firstAttribute="top" secondItem="KXV-B2-46I" secondAttribute="top" id="L3e-kR-hug"/>
+                        <constraint firstAttribute="bottom" secondItem="y6E-0l-CM5" secondAttribute="bottom" id="Zdd-P1-Aot"/>
+                        <constraint firstAttribute="trailing" secondItem="y6E-0l-CM5" secondAttribute="trailing" id="m12-2O-WtB"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl3-xb-aXI">
+                    <rect key="frame" x="10" y="808" width="394" height="44"/>
+                    <color key="backgroundColor" red="0.082352941176470587" green="0.72156862745098038" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aRu-vv-5TZ"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="CẬP NHẬT HÌNH ẢNH">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onUpdateImage" destination="-1" eventType="touchUpInside" id="JsK-Rd-26G"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tl3-xb-aXI" firstAttribute="top" secondItem="KXV-B2-46I" secondAttribute="bottom" constant="10" id="2Um-vB-CZa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tl3-xb-aXI" secondAttribute="bottom" constant="10" id="Pxo-FN-IOC"/>
+                <constraint firstItem="KXV-B2-46I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="T9V-kn-8Jo"/>
+                <constraint firstItem="KXV-B2-46I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VLo-D1-Vqg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KXV-B2-46I" secondAttribute="trailing" id="gHp-zN-asW"/>
+                <constraint firstItem="y6E-0l-CM5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="o4n-pO-HD5"/>
+                <constraint firstItem="tl3-xb-aXI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="ovZ-9a-F1G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tl3-xb-aXI" secondAttribute="trailing" constant="10" id="uW8-RX-rS1"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="79"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_add_new" width="50" height="50"/>
+        <image name="ic_camera_new" width="40" height="36.5"/>
+        <image name="selected_radio_ic" width="170.5" height="170.5"/>
+        <image name="unselected_radio_ic" width="170.5" height="170.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
